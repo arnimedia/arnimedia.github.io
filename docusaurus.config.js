@@ -91,34 +91,30 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Discord',
+                href: 'https://discord.gg/minima',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/Minima_Global',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/Minima_Global',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Devs',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/minima-global',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `All rights reserved Minima Ltd © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
