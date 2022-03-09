@@ -69,7 +69,7 @@ const config = {
           },
           {to: '/blog', label: 'Incentive Program', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://minima.global/get-involved#community',
             label: 'Community',
             position: 'right',
           },
@@ -82,7 +82,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
             ],

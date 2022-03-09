@@ -84,3 +84,8 @@
 .row .col.col--4 {
   padding-bottom: var(--ifm-spacing-vertical);
 }
+
+.card__body {
+  padding-top: 0;
+  font-size: 1.125rem;
+}
