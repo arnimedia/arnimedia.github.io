@@ -9,3 +9,11 @@
   height: 20px;
   width: 20px;
 }
+
+.card__header__min h3 {
+  font-size: 2rem;
+}
+
+.card__header__min:hover  h3 {
+  color: var(--ifm-color-primary);
+}

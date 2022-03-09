@@ -27,6 +27,14 @@
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
   --ifm-hero-text-color: #16181C;
+
+/* Footer */
+  --ifm-footer-background-color: #363A3F;
+
+/* Card */
+  --ifm-card-background-color: #F4F4F5; 
+  --ifm-spacing-horizontal: 0.5rem;
+  --ifm-spacing-vertical: 1rem;
 }
 /* #16181C */
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -40,10 +48,13 @@
   --ifm-color-primary-lightest: #4fddbf;
   --ifm-navbar-background-color: #363A3F;
 
-/* Typography. */
+/* Typography */
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
   --ifm-hero-background-min-color: #16181C;
+
+/* Card */
+--ifm-card-background-color: #363A3F;
 }
 
 .docusaurus-highlight-code-line {
@@ -55,4 +66,21 @@
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card{
+  animation: .4s .15s backwards a;
+  margin-top: 0;
+  padding: 0.5rem;
+  transition-duration: .2s;
+  transition-property: all;
+  min-height: 100%;
+  height: 100%;
+}
+.card:hover{
+  -webkit-transform:translateY(-5px);transform:translateY(-5px)
+}
+
+.row .col.col--4 {
+  padding-bottom: var(--ifm-spacing-vertical);
 }

@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Vision',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         Learn about the orginal vision of Minima and why it exists.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Learn',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         An in-depth introduction to the Minima protocol and it’s architecture.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Run a node',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         Learn how to install and run a validating and constructing Minima node on your device.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Earn Rewards',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         Learn about the Minima Incentive Program
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Ambassador',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         Learn how to become a Minima ambassador and what Rewards you could earn
@@ -50,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Tokenomics',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    link: 'docs/vision',
     description: (
       <>
         Find out how a fixed supply of 1 Billion coins have been distributed.
@@ -59,16 +59,28 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+// Remove SVG on deploy
+
+function Feature({Svg, title, link, description}) {
   return (
-    <div className={clsx('col col--4 card')}>
-      <div className="text--center">
+    <div className={clsx('col col--4')}>
+      <a class="navbar__link" href={link}>
+        <div class="card">
+            <div className={clsx('card__header', styles.card__header__min)}>
+              <h3><p>{title}</p></h3>
+            </div>
+            <div class="card__body">
+              <p>{description}</p>
+            </div>
+        </div>
+      </a>
+      {/* <div className="text--left">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--left padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
