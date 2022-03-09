@@ -4,9 +4,11 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ffffff;
+  --ifm-color-primary: #5A94FF;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -14,20 +16,34 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  /* --ifm-navbar-background-color: #F9F9FA; */
-  --ifm-hero-background-color: #FFFFFF;
+  --ifm-navbar-background-color: #F9F9FA;
   --ifm-heading-color: #16181C;
+
+/* Typography. */
+  --ifm-heading-font-family: 'Manrope', sans-serif;
+  --ifm-font-family-base: 'Manrope', sans-serif;
+  --ifm-heading-font-weight: 800;
+
+/* Header intro background */
+  --ifm-hero-background-min-color: #FFFFFF;
+  --ifm-hero-text-color: #16181C;
 }
 /* #16181C */
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #5A94FF;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-navbar-background-color: #363A3F;
+
+/* Typography. */
+  --ifm-heading-color: #ffffff;
+  --ifm-hero-text-color: #ffffff;
+  --ifm-hero-background-min-color: #16181C;
 }
 
 .docusaurus-highlight-code-line {
