@@ -62,8 +62,10 @@
     --aa-muted-color-alpha: 0.6;
     --aa-panel-border-color-rgb: 128,126,163;
     --aa-panel-border-color-alpha: 0.3;
-    --aa-input-border-color-rgb: 128,126,163;
+
+    --aa-input-border-color-rgb: 249, 249, 250;
     --aa-input-border-color-alpha: 0.8;
+
     --aa-background-color-rgb: 255,255,255;
     --aa-background-color-alpha: 1;
     
