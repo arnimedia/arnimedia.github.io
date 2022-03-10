@@ -48,6 +48,7 @@
 
 /* Card */
   --ifm-card-background-color: #25272B;
+  --aa-muted-color-rgb: rgb(255, 255, 256) !important
 }
 
 /* Header */
@@ -117,7 +118,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 }
 
 .card__body {
-  padding-top: 0.3rem;
+  padding-top: 0rem;
   font-size: 1rem;
   font-weight: 700;
 }
