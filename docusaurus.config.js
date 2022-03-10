@@ -47,7 +47,7 @@ const config = {
       navbar: {
         title: 'Minima Documentation',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Minima',
           src: 'img/logo.svg',
         },
         items: [

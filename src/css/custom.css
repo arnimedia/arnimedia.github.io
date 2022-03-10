@@ -191,15 +191,7 @@
 }
 
 .aa-DetachedSearchButtonIcon {
-  align-items: center;
-  color: #3e34d3;
-  color: rgba(var(--ifm-navbar-background-color),1);
-  cursor: auto;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 210px;
-  width: calc(var(--aa-icon-size) + var(--aa-spacing));
+  color: var(--ifm-color-primary) !important;
 }
 
 .aa-DetachedSearchButton {
@@ -209,7 +201,6 @@
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
   width: 210px !important;
   /* --aa-input-border-color-rgb: 189, 189, 196; */
-
 }
 
 
