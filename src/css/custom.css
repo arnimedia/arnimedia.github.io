@@ -149,8 +149,10 @@
   display: none;
 }
 
+/* Content innner page margin left */
+
 /* Border around swith mode */
-.toggleButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
+.navbar__items [role="button"] {
   border: 1px solid;
 }
 
