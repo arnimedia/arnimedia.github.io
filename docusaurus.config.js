@@ -75,6 +75,11 @@ const config = {
             label: 'Community',
             position: 'right',
           },
+          {
+            href: 'https://github.com/minima-global',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
