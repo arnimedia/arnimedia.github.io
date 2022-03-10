@@ -146,7 +146,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 }
 
 .aa-Form {
-  background-color: rgb(var(--ifm-navbar-background-color)) !important;
+  background-color: var(--ifm-navbar-background-color) !important;
   border-color: var(--ifm-input-border-color)!important;
 }
 
@@ -170,6 +170,13 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 
 .aa-Input{
   color: var(--ifm-input-text-color) !important;
+  font-weight: 500 !important;
+}
+
+.aa-Panel{
+  color: var(--ifm-input-text-color) !important;
+  font-weight: 500 !important;
+  background-color: var(--ifm-navbar-background-color) !important;
 }
 
 article{
