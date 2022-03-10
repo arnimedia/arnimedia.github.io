@@ -195,6 +195,7 @@
 }
 
 .aa-DetachedSearchButton {
+  color: var(--ifm-navbar-link-color);
   border-radius: 12px !important;
   flex-direction: row-reverse;
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
