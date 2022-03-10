@@ -67,7 +67,7 @@ function Feature({Svg, title, link, description}) {
       <a class="navbar__link" href={link}>
         <div class="card">
             <div className={clsx('card__header', styles.card__header__min)}>
-              <h3>{title}</h3>
+              <p>{title}</p>
             </div>
             <div class="card__body">
               <p>{description}</p>
