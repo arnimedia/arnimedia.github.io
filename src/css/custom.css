@@ -197,7 +197,8 @@
 .aa-DetachedSearchButton {
   border-radius: 12px !important;
   flex-direction: row-reverse;
-  background-color: rgb(var(--aa-input-background-color-rgb)) !important;
+  background-color: rgb(var(--ifm-navbar-background-color)) !important;
+  width: 210px !important;
   /* --aa-input-border-color-rgb: 189, 189, 196; */
 
 }
