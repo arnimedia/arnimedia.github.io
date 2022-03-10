@@ -63,10 +63,9 @@
 }
 
 /* Removing link icon */
-.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-IconExternalLink-styles-module {
+.footer__link-item span svg{
   display: none;
 }
-
 /* Border around swith mode */
 .toggleButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
   border: 1px solid;
