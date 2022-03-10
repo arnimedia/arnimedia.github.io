@@ -65,6 +65,9 @@
 .footer__bottom {
   text-align: left;
 }
+.footer__copyright{
+  font-size: 12px;
+}
 
 /* Removing link icon */
 .footer__link-item span svg, .navbar__link span svg{
