@@ -58,8 +58,12 @@
 --ifm-card-background-color: #25272B;
 }
 
+/* Footer styling */
 .footer--dark {
   --ifm-footer-background-color: #25272B;
+}
+.footer__bottom {
+  text-align: left;
 }
 
 /* Removing link icon */
