@@ -209,6 +209,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   color: var(--ifm-navbar-link-color) !important;
   border-radius: 12px !important;
   flex-direction: row-reverse;
+  justify-content: space-between;
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
   width: 180px !important;
   font-weight: 500 !important;
@@ -219,8 +220,11 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   background: var(--ifm-navbar-background-color) !important;
 }
 
-
 .aa-Form {
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
   border-color: var(--ifm-input-border-color)!important;
+}
+
+.aa-Label svg, .aa-LoadingIndicator svg {
+  color: var(--ifm-color-primary) !important;
 }
