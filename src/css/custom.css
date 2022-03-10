@@ -147,7 +147,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   font-weight: 500 !important;
   border-color: var(--ifm-input-border-color)!important;
   height: 38px !important;
-  margin-right: 0.5rem;
+  margin-right: 0.5rem !important;
 }
 
 .aa-DetachedContainer {
@@ -168,8 +168,8 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 }
 
 .aa-DetachedCancelButton{
-  background-color: var(--ifm-color-primary);
-  color: var(--ifm-font-color-base-inverse);
+  background-color: var(--ifm-color-primary) !important;
+  color: var(--ifm-font-color-base-inverse) !important;
 }
 
 article{
