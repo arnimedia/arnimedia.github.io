@@ -161,11 +161,11 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 .aa-DetachedCancelButton{
   background-color: var(--ifm-color-primary) !important;
   color: var(--ifm-input-cancel-color) !important;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .aa-Form{
-  border-radius: 12px;
+  border-radius: 12px !important;
 }
 
 .aa-Input{
