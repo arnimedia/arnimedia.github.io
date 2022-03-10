@@ -9,12 +9,6 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #5A94FF;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #F9F9FA;
   --ifm-heading-color: #16181C;
@@ -38,18 +32,13 @@
 
 /* Search */
   --ifm-input-border-color: #BDBDC4;
+  --ifm-input-cancel-color: #FFFFFF;
+  --ifm-input-text-color: #FFFFFF;
 }
 /* #16181C */
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #5A94FF;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-
   --ifm-navbar-background-color: #25272B;
 
 /* Typography */
@@ -133,6 +122,7 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   font-weight: 700;
 }
 
+/* Search  */
 .aa-DetachedSearchButtonIcon {
   color: var(--ifm-color-primary) !important;
 }
@@ -169,7 +159,15 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
 
 .aa-DetachedCancelButton{
   background-color: var(--ifm-color-primary) !important;
-  color: var(--ifm-font-color-base-inverse) !important;
+  color: var(--ifm-input-cancel-color) !important;
+}
+
+.aa-Form{
+  border-radius: 12px;
+}
+
+.aa-Input{
+  color: var(--ifm-input-text-color);
 }
 
 article{
