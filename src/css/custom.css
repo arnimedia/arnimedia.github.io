@@ -143,6 +143,12 @@
   display: none;
 }
 
+
+/* Removing breadcrumbs */
+.theme-doc-breadcrumbs{
+  display: none;
+}
+
 /* Border around swith mode */
 .toggleButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
   border: 1px solid;
