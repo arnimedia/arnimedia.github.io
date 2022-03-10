@@ -36,6 +36,9 @@
   --ifm-spacing-horizontal: 0.5rem;
   --ifm-spacing-vertical: 1rem;
 
+/* Search */
+  --ifm-input-border-color: #F9F9FA;
+
 
   --aa-search-input-height: 44px;
     --aa-input-icon-size: 20px;
@@ -108,6 +111,8 @@
 
 /* Card */
   --ifm-card-background-color: #25272B;
+
+  --ifm-input-border-color: #F9F9FA;
 
   --aa-text-color-rgb: 189, 189, 196;
   --aa-primary-color-rgb: 189, 189, 196;
@@ -207,6 +212,6 @@ div.navbar__inner > div:nth-child(1) > a:nth-child(3){
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
   width: 210px !important;
   font-weight: 500 !important;
-  border-color: var(--aa-input-border-color-rgb)!important;
+  border-color: var(--ifm-input-border-color)!important;
 }
 
