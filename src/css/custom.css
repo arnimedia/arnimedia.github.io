@@ -29,7 +29,7 @@
   --ifm-hero-text-color: #16181C;
 
 /* Footer */
-  --ifm-footer-background-color: #363A3F;
+  --ifm-footer-background-color: #25272B;
 
 /* Card */
   --ifm-card-background-color: #F4F4F5; 
@@ -46,7 +46,8 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --ifm-navbar-background-color: #363A3F;
+
+  --ifm-navbar-background-color: #25272B;
 
 /* Typography */
   --ifm-heading-color: #ffffff;
@@ -54,7 +55,21 @@
   --ifm-hero-background-min-color: #16181C;
 
 /* Card */
---ifm-card-background-color: #363A3F;
+--ifm-card-background-color: #25272B;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #25272B;
+}
+
+/* Removing link icon */
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-next-theme-IconExternalLink-styles-module {
+  display: none;
+}
+
+/* Border around swith mode */
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
+  border: 1px solid;
 }
 
 .docusaurus-highlight-code-line {
@@ -88,4 +103,21 @@
 .card__body {
   padding-top: 0;
   font-size: 1.125rem;
+}
+
+.aa-DetachedSearchButtonIcon {
+  align-items: center;
+  color: #3e34d3;
+  color: rgba(var(--ifm-navbar-background-color),1);
+  cursor: auto;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 210px;
+  width: calc(var(--aa-icon-size) + var(--aa-spacing));
+}
+
+.aa-DetachedSearchButton {
+  background-color: transparent;
+  flex-direction: row-reverse;
 }
