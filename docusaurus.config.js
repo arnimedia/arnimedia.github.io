@@ -53,19 +53,19 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'vision',
+            docId: 'about/vision',
             position: 'left',
             label: 'Vision',
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about/vision',
             position: 'left',
             label: 'Learn',
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about/vision',
             position: 'left',
             label: 'Run a node',
           },
@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/intro',
+                to: 'docs/about/vision',
               },
             ],
           },

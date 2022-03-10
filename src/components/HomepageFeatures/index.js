@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Vision',
-    link: 'docs/vision',
+    link: 'docs/about/vision',
     description: (
       <>
         Learn about the orginal vision of Minima and why it exists.
