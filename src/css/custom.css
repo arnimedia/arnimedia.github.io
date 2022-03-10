@@ -33,9 +33,9 @@
 /* Search */
   --ifm-input-border-color: #BDBDC4;
   --ifm-input-cancel-color: #FFFFFF;
-  --ifm-input-text-color: #FFFFFF;
+  --ifm-input-text-color: var(--ifm-navbar-link-color);
 }
-/* #16181C */
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #5A94FF;
@@ -48,7 +48,8 @@
 
 /* Card */
   --ifm-card-background-color: #25272B;
-  --aa-muted-color-rgb: rgb(255, 255, 256) !important
+  --aa-muted-color-rgb: rgb(255, 255, 256) !important;
+  --ifm-input-text-color: #FFFFFF;
 }
 
 /* Header */
