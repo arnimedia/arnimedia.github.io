@@ -63,9 +63,10 @@
 }
 
 /* Removing link icon */
-.footer__link-item span svg{
+.footer__link-item span svg, .navbar__link span svg{
   display: none;
 }
+
 /* Border around swith mode */
 .toggleButton_node_modules-\@docusaurus-theme-classic-lib-next-theme-ColorModeToggle-styles-module {
   border: 1px solid;
