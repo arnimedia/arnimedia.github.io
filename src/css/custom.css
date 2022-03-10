@@ -58,6 +58,11 @@
 --ifm-card-background-color: #25272B;
 }
 
+/* Header */
+.navbar__logo {
+  margin-left: 0.5rem;
+}
+
 /* Footer styling */
 .footer--dark {
   --ifm-footer-background-color: #25272B;
@@ -93,7 +98,7 @@
 .card{
   animation: .4s .15s backwards a;
   margin-top: 0;
-  padding: 0.5rem;
+  padding: 1rem 2rem 4rem 2rem;
   transition-duration: .2s;
   transition-property: all;
   min-height: 100%;
@@ -108,8 +113,9 @@
 }
 
 .card__body {
-  padding-top: 0;
-  font-size: 1.125rem;
+  padding-top: 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .aa-DetachedSearchButtonIcon {
