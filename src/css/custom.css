@@ -127,6 +127,10 @@
   margin-left: 0.5rem;
 }
 
+div.navbar__inner > div:nth-child(1) > a:nth-child(3){
+  margin-left: 2.3rem;
+}
+
 /* Footer styling */
 .footer--dark {
   --ifm-footer-background-color: #25272B;
@@ -200,48 +204,7 @@
   flex-direction: row-reverse;
   background-color: rgb(var(--ifm-navbar-background-color)) !important;
   width: 210px !important;
-  font-weight: 500;
-  /* --aa-input-border-color-rgb: 189, 189, 196; */
+  font-weight: 500 !important;
+  border-color: var(--aa-input-border-color-rgb)!important;
 }
 
-
-
-.aa-Autocomplete, .aa-DetachedFormContainer, .aa-Panel {
-  color: #262627;
-  color: rgba(var(--aa-text-color-rgb),var(--aa-text-color-alpha));
-  font-family: inherit;
-  font-family: var(--aa-font-family);
-  font-size: 16px;
-  font-size: var(--aa-font-size);
-  font-weight: 400;
-  line-height: 1em;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.aa-DetachedSearchButton {
-  align-items: center;
-  background-color: #fff;
-  background-color: rgba(var(--aa-input-background-color-rgb),var(--aa-input-background-color-alpha));
-  border: 1px solid rgba(128,126,163,.8);
-  border: 1px solid rgba(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha));
-  border-radius: 12px;
-  color: rgba(128,126,163,.6);
-  color: rgba(var(--aa-muted-color-rgb),var(--aa-muted-color-alpha));
-  cursor: pointer;
-  display: flex;
-  font: inherit;
-  font-family: inherit;
-  font-family: var(--aa-font-family);
-  font-size: 16px;
-  font-size: var(--aa-font-size);
-  height: 44px;
-  height: var(--aa-search-input-height);
-  margin: 0;
-  padding: 0 5.5px;
-  padding: 0 calc(var(--aa-search-input-height)/8);
-  position: relative;
-  text-align: left;
-  width: 100%;
-}
