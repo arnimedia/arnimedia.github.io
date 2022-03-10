@@ -16,6 +16,8 @@ const config = {
   organizationName: 'arnimedia', // Usually your GitHub org/user name.
   projectName: 'arnimedia.github.io', // Usually your repo name.
 
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+
   presets: [
     [
       'classic',
