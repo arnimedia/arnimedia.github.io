@@ -123,18 +123,20 @@ Used for a burn transaction. The linkhash of a burn transaction is the transacti
 Diagram: Main transaction structure
 
 :::tip Transaction ID: Hash(Transaction object)
-Inputs
-Outputs
-State Variables (0-255)
-Linkhash (0x00)
+
+Inputs\
+Outputs\
+State Variables (0-255)\
+Linkhash (0x00)\
 :::
 
 Diagram: Burn transaction structure
 :::tip Transaction ID: Hash(Transaction object)
-Inputs (matching the main txn)
-Output (amount to burn)
-State Variables (matching the main txn)
-Linkhash (main txn ID)
+
+Inputs (matching the main txn)\
+Output (amount to burn)\
+State Variables (matching the main txn)\
+Linkhash (main txn ID)\
 :::
 
 ### Transaction Validity
