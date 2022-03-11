@@ -7,6 +7,8 @@ sidebar_position: 3
 Minima was born out of the desire to achieve what Bitcoin originally sought to achieve; a truly decentralized, censorship resistant, peer-to-peer, electronic cash system. Over time, Bitcoin mining has become more centralized due to its competitive nature and game theory suggests this is only headed in one direction, towards centralization. 
 
 ## Bitcoin node count since 2017:
+![Docusaurus logo](/img/about/bitcoin.png)
+
 
 Source: [Bitcoin Node Count History](https://luke.dashjr.org/programs/bitcoin/files/charts/historical.html) 
 
@@ -21,58 +23,3 @@ Recognising this reduces the so-called ‘Blockchain Trilemma’ of decentraliza
 Scalability can be achieved through various Layer 2 solutions, such as a ‘Lightning’ network implemented on the Minima blockchain. 
 
 Minima also enables smart contracts with a Turing-complete scripting language, providing a censorship-resistant platform for ‘Web 3’ applications.
-
-## Images
-
-Regular Markdown images are supported.
-
-Add an image at `static/img/docusaurus.png` and display it in Markdown:
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-![Docusaurus logo](/img/docusaurus.png)
-
-## Code Blocks
-
-Markdown code blocks are supported with Syntax highlighting.
-
-    ```jsx title="src/components/HelloDocusaurus.js"
-    function HelloDocusaurus() {
-        return (
-            <h1>Hello, Docusaurus!</h1>
-        )
-    }
-    ```
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-
-## Code Blocks
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-
-
-
