@@ -121,67 +121,86 @@ Transactions also include State Variables for storing public data and previous t
 
 Used for a burn transaction. The linkhash of a burn transaction is the transaction ID of the main transaction it relates to. This means that the burn transaction can only be spent with the transaction it is linked to.  For normal transactions, it is set to 0x00.
 Diagram: Main transaction structure
-| Transaction ID: Hash(Transaction object) |
-| ----------- |
-| Inputs
+
+:::tip Transaction ID: Hash(Transaction object)
+Inputs
 Outputs
 State Variables (0-255)
-Linkhash (0x00) |
-
-
-
+Linkhash (0x00)
+:::
 
 Diagram: Burn transaction structure
-Transaction ID: Hash(Transaction object)
+:::tip Transaction ID: Hash(Transaction object)
 Inputs (matching the main txn)
 Output (amount to burn)
 State Variables (matching the main txn)
 Linkhash (main txn ID)
+:::
 
-
-Transaction Validity
+### Transaction Validity
 
 For a transaction to be valid, it must:
-It must have at least one, and up to 256 coin inputs
-It must have no more than 255 outputs 
-All inputs and outputs must be valid Minima amounts 
-The sum of inputs must be greater than or equal to the sum of the outputs for each Token ID.
-Have unique coin IDs for each input coin
+1. It must have at least one, and up to 256 coin inputs
+2. It must have no more than 255 outputs 
+3. All inputs and outputs must be valid Minima amounts 
+4. The sum of inputs must be greater than or equal to the sum of the outputs for each Token ID.
+5. Have unique coin IDs for each input coin
 
 
+## MMR Database
 
-
-MMR Database
 As the blockchain is heavily pruned, users must store proof that their coins (UTxOs) are unspent. This is the role of the MMR database. The MMR (Merkle Mountain Range) proof db is a hash sum tree containing the proofs for all coins, spent (STxOs) or unspent (UTxOs) in the system.
 
 Users do not store the whole MMR for all the coins in the system, as this would be too burdensome, rather they only store the paths to their own coins which must be provided when a user wishes to spend their coins.
 
 The tree is append-only and is updated with each new block as coins are spent and created. When a coin is spent, the Spent state of the coin changes from false to true and the MMR Proof for the coin is updated.
+
 When a new coin is created (as an output to a transaction), a new leaf node is added to the tree for the new, unspent coin, creating new peaks and a new root hash.
 Therefore, for a user to prove the validity of their coins (i.e. that they are unspent), a user must remain up to date with the chain to ensure they hold the most up to date coin proofs.
+
 When a user wishes to spend their coins, they must prove their coins are unspent by providing:
-The MMR Root hash from the most recent block
-The proof path to the entry of the coin 
+
+1. The MMR Root hash from the most recent block
+2. The proof path to the entry of the coin 
+
 A node receiving the proofs will check the coins are valid by summing the hashes provided and ensuring it matches the Merkle root they possess themselves.
 Diagram: A complete Merkle Mountain Range (MMR) with three peaks and root
 
 A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
 Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
 
+## TxPoW Units (Blocks)
 
-TxPoW Units (Blocks)
-Before a transaction can be posted to the network, it must be added to a TxPoW unit with other essential data and ‘mined’.
+Before a transaction can be posted to the network, it must be added to a **TxPoW** unit with other essential data and ‘mined’.
 During the TxPoW creation process, in addition to the main transaction, unconfirmed transactions in the mempool will also be added to the body of the TxPoW unit, serving to further propagate mempool transactions to known peers.
+
 After being mined, a TxPoW unit will be propagated to the network either as a block if it meets the network block difficulty level, or as a basic TxPoW unit which serves only to propagate known unconfirmed transactions. This ensures block creation is a ‘chance’ encounter.
+
 A node can carry out several activities with a TxPoW unit depending on the situation:
-Generate: When a user wishes to send a transaction, or is required to send a Pulse to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the mempool. TxPoW units are analogous to compact blocks in Bitcoin. See TxPoW Generation
-Mine: Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different nonces (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~10 seconds work), they can propagate their TxPoW unit to other nodes in the network. 
-	Note: The transaction difficulty sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work). This ensures the network has received the transactions in their TxPoW unit, however this does not automatically mean that their transactions are in a block. 
+
+:::tip 
+Generate When a user wishes to send a transaction, or is required to send a Pulse to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the mempool. TxPoW units are analogous to compact blocks in Bitcoin. See TxPoW Generation
+:::
+
+:::tip Mine 
+Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different nonces (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~10 seconds work), they can propagate their TxPoW unit to other nodes in the network. 
+:::
+
+:::tip Note 
+The transaction difficulty sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work).This ensures the network has received the transactions in their TxPoW unit, however this does not automatically mean that their transactions are in a block. 
 TxPoW units only become blocks if, by chance, the block difficulty is met in the process of meeting the transaction difficulty. 
-Check: When a node receives a TxPoW unit from another node on the network, it must check it to ensure its validity before processing and forwarding it on to its peers.
-Process: When the node has checked that a TxPoW unit is valid, it will process it, adding to the chain if it meets the required difficulty level to become a block.
+:::
+
+:::tip Check 
+When a node receives a TxPoW unit from another node on the network, it must check it to ensure its validity before processing and forwarding it on to its peers.
+:::
+
+:::tip Process
+When the node has checked that a TxPoW unit is valid, it will process it, adding to the chain if it meets the required difficulty level to become a block.
+:::
 
 Diagram: The structure of a TxPoW Unit
+
 TxPoW ID
  Header
 Nonce (nonce)
