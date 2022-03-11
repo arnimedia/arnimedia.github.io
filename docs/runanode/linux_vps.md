@@ -81,7 +81,7 @@ You may need to type journalctl -u minima -f to show the Minima Logs before runn
 ![Linux](/img/runanode/linux_2.png)
 
 :::tip Note 
-**Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 
 
