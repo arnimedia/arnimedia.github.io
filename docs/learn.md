@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Learn
 
-Learn
-
 ## Network Overview
 The Minima network consists of four distinct layers. Each layer contributes to Minima being a truly decentralized, peer-to-peer network for value and information exchange.
 
