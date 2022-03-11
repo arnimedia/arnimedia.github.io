@@ -86,10 +86,12 @@ All transactions create new UTxOs (coins) as outputs, each coin is identifiable 
 
 Each coin has the following attributes:
 
-| Syntax | Description |
+| Coin Attribute | Description |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| CoinID | The globally unique identifier for a coin. 
+The coin id of a new UTxO is
+hash(first input coin in txn |  output_num_in_txn)|
+| ----------- | ----------- |
 
 Coin Attribute
 Description
