@@ -65,7 +65,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'about/vision',
+            docId: 'runanode',
             position: 'left',
             label: 'Run a node',
           },
