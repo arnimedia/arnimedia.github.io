@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Minima Invite Program
+# Minima Incentive Program
 
 ## What is the Minima Incentive Program?
 The Incentive Program is designed to reward you for installing and running a Minima node.
