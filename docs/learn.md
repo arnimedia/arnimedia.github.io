@@ -61,52 +61,28 @@ The example below shows a transaction of 30 Minima from Bob to Alice. A UTxO wor
 ### MMR (Merkle Mountain Range) Database 
 As the tree is constantly pruned, users must keep track of their spent and unspent TxOs (transaction outputs)independently of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
 When a user wishes to spend their coins, they must provide the up to date valid proofs that it is unspent.
-Transaction Proof-of-Work (TxPoW)
-Another core concept in Minima is TxPoW - Transaction Proof of Work. Minima requires users to provide work, in the form of computing power, to ‘mine’ their own transactions. Once a user has contributed a small amount of work (~10 seconds) their transaction will be propagated around the network. This is in contrast to Bitcoin where users rely on miners with specific hardware to provide PoW and propagate their transactions on their behalf.
-Transactions are held in TxPoW units, which may or may not become blocks. TxPoW units contain a user’s transaction and the hashes of other unconfirmed transactions known to the user’s node. TxPoW units become blocks if they, by chance, meet the level of difficulty required to become a block. 
-The Burn
+
+### Transaction Proof-of-Work (TxPoW)
+Another core concept in Minima is **TxPoW** - Transaction Proof of Work. Minima requires users to provide work, in the form of computing power, to ‘mine’ their own transactions. Once a user has contributed a small amount of work (~10 seconds) their transaction will be propagated around the network. This is in contrast to Bitcoin where users rely on miners with specific hardware to provide PoW and propagate their transactions on their behalf.
+
+Transactions are held in **TxPoW** units, which may or may not become blocks. TxPoW units contain a user’s transaction and the hashes of other unconfirmed transactions known to the user’s node. TxPoW units become blocks if they, by chance, meet the level of difficulty required to become a block. 
+
+### The Burn
 The Burn is a small cost (fee) which is incurred when sending transactions on the Minima network during times of high demand. This cost, denominated in Minima, is ‘burned’ i.e. removed from Minima's hard-capped supply, making Minima a deflationary currency as the overall circulating supply slowly decreases over time. 
 
 The burn serves multiple purposes:
-A strong incentive to propagate and process a transaction: All users in the network will benefit from the decrease in supply as coins that are left become  more scarce and therefore more valuable.
-A method for ordering transactions and regulating on-chain traffic: Similar to the fee model on other blockchains, the burn serves as a selection method for deciding which unconfirmed transactions will be added to a block. The higher the burn amount in a transaction, the more likely it is that a transaction will be added to a block. 
-A mechanism for spam prevention by making Denial-of-Service (DoS) attacks expensive: The burn may be high during periods of heavy traffic or spam and, as it rises, traffic will decrease, self-regulating the system. The burn can be nil or very low when traffic is at manageable levels as the total amount is not important, only the relative burn amount in comparison to other transactions.
-Transactions
-Transaction Outputs & Inputs
-Transaction Outputs
-All transactions create new UTxOs (coins) as outputs, each coin is identifiable with a unique CoinID and consists of 
-a specific amount of Minima and 
-a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. See scripting
-Each coin has the following attributes:
-Coin Attribute
-Description
-CoinID
-The globally unique identifier for a coin. 
-The coin id of a new UTxO is
-hash(first input coin in txn |  output_num_in_txn)
-Amount
-The amount of 'Minima'. Even custom token transactions are just amounts of coloured Minima (see coloured coins)
-Address
-The hash of a script. 
-If no custom script is provided,the script will simply be RETURN(SIGNEDBY([PublicKey of coin owner]) i.e. the  transaction must be signed by the coin owner before it can be spent.
-All addresses are P2SH (Pay to Script Hash).
-TokenID
-The token id. Minima is 0x00. Everything else has a full 64 byte hash. Tokens are created by colouring Minima. 
-Token
-Token Details (see coloured coins)
-Floating
-True or False. Set when you create a transaction. If True, the coinid is ignored so that any valid coin that has the same amount, address and TokenID can be used.
-Store State
-True or False, depending on whether the state is stored for this coin
-State
-The state variables(0-255) of the transaction this coin was created in. You can access this data from scripts. 
-MMR Entry
-The MMR database entry number for this coin
-Spent
-True or False, depending on whether this coin has been spent or not.
-Created
-The block number this coin was created in.
+- A strong incentive to propagate and process a transaction: All users in the network will benefit from the decrease in supply as coins that are left become  more scarce and therefore more valuable.
+- A method for ordering transactions and regulating on-chain traffic: Similar to the fee model on other blockchains, the burn serves as a selection method for deciding which unconfirmed transactions will be added to a block. The higher the burn amount in a transaction, the more likely it is that a transaction will be added to a block. 
+- A mechanism for spam prevention by making Denial-of-Service (DoS) attacks expensive: The burn may be high during periods of heavy traffic or spam and, as it rises, traffic will decrease, self-regulating the system. The burn can be nil or very low when traffic is at manageable levels as the total amount is not important, only the relative burn amount in comparison to other transactions.
 
+
+## Transactions
+Transaction Outputs & Inputs
+
+### Transaction Outputs
+All transactions create new UTxOs (coins) as outputs, each coin is identifiable with a unique CoinID and consists of 
+- a specific amount of Minima and 
+- a script that determines the conditions required to spend the coin. This script is executed when a user attempts to spend the coin in a transaction and must return a value of TRUE to be spendable. See scripting
 
 
 
