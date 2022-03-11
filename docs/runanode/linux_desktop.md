@@ -31,7 +31,6 @@ i.e. sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable -clean
 
 If any of the above happen, your Minima node will stop running and you will need to repeat step 3 to start it again. 
 ![Linux](/img/runanode/linux_1.png)
-----
 
 ## How to set up your Incentive Program account to receive rewards
 

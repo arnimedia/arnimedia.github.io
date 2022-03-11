@@ -11,19 +11,25 @@ sidebar_position: 6
 3. If you have any older versions of Minima installed, please uninstall them before moving to the next step. 
 Please run this script to uninstall minima:
 
-<code>wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh</code>
+```
+wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh
+```
 
 4. If you have not run Minima before, please ensure you have the latest version of Java installed on the server https://java.com/en/
 5. From the root directory, please run the following script:
 
-<code>wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001</code>
+```
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
+```
 
 6. Wait a few minutes for Minima to start.
 
 Running multiple nodes on one server? 
 You can specify different port numbers on the end to do this, 
 For example (using 9122 and 9121): 
-<code>wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9122 -p 9121</code>
+```
+wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9122 -p 9121
+```
 
 
 ___ 
@@ -40,17 +46,21 @@ Please check your junk mail for the reset password email.
 
 2. Once the Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the command line: 
 
-<code>sudo apt install curl
+```
+sudo apt install curl
 curl 127.0.0.1:9002/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 Example:
-curl 127.0.0.1:9002/incentivecash%20uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84</code>
+curl 127.0.0.1:9002/incentivecash%20uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
+```
 
 You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any).
 
 If you have multiple nodes on one server, you will need to change the port number in the curl command to update the second node using the port number after -r
 For example:
 
-<code>curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx</code>
+```
+curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
+```
 
 Your Incentive Program account is now connected to your node!
 
@@ -70,7 +80,8 @@ You may need to type journalctl -u minima -f to show the Minima Logs before runn
 
 ## Useful Commands
 
-<code>ctrl-c : Exits the Minima logs (Minima will continue to run in the background)
+```
+ctrl-c : Exits the Minima logs (Minima will continue to run in the background)
 journalctl -u minima_9001 -f : Show the Minima logs
 sudo ps -fC java : Shows all running Java processes
 
@@ -89,6 +100,7 @@ sudo systemctl start minima_9001 - Start the Minima service
 Interacting with Minima
 curl 127.0.0.1:9002/status | jq - shows the status of Minima 
 curl 127.0.0.1:9002/incentivecash | jq - shows your incentive cash balance
-curl 127.0.0.1:9002/help | jq - shows the full list of commands </code>
+curl 127.0.0.1:9002/help | jq - shows the full list of commands
+```
 
 
