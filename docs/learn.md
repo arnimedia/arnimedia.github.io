@@ -87,8 +87,8 @@ All transactions create new UTxOs (coins) as outputs, each coin is identifiable 
 Each coin has the following attributes:
 
 | Coin Attribute | Description |
-| ----------- | ----------- |
-| CoinID | The globally unique identifier for a coin. The coin id of a new UTxO is hash(first input coin in txn  / output_num_in_txn)|
+| -------------- | ----------- |
+| CoinID | The globally unique identifier for a coin. The coin id of a new UTxO is hash(first input coin in txn &#124; output_num_in_txn)|
 | Amount | The amount of 'Minima'. Even custom token transactions are just amounts of coloured Minima (see coloured coins)|
 | Address | The hash of a script. If no custom script is provided,the script will simply be RETURN(SIGNEDBY([PublicKey of coin owner]) i.e. the  transaction must be signed by the coin owner before it can be spent. All addresses are P2SH (Pay to Script Hash).|
 | TokenID | The token id. Minima is 0x00. Everything else has a full 64 byte hash. Tokens are created by colouring Minima.|
@@ -125,10 +125,13 @@ Diagram: Main transaction structure
 
 :::tip Transaction ID: Hash(Transaction object)
 
-Inputs.
-Outputs.
-State Variables (0-255).
-Linkhash (0x00).
+Inputs
+
+Outputs
+
+State Variables (0-255)
+
+Linkhash (0x00)
 :::
 
 
@@ -210,17 +213,19 @@ When the node has checked that a TxPoW unit is valid, it will process it, adding
 Diagram: The structure of a TxPoW Unit
 
 TxPoW ID
- Header
-Nonce (nonce)
-TimeMilli (timemilli)
-Block Number (block)
-Block Difficulty (blkdiff)
-Cascade Levels (cascadelevels)
-Parent Blocks  (superparents)
-MMR Root (mmr)
-MMR Total (total)
-Magic (magic)
-Body Hash (txbodyhash)
+
+| Header |
+| -------------- |
+| Nonce (nonce) | 
+| TimeMilli (timemilli) | 
+| Block Number (block) | 
+| Block Difficulty (blkdiff) | 
+| Cascade Levels (cascadelevels) | 
+| Parent Blocks  (superparents) | 
+| MMR Root (mmr) | 
+| MMR Total (total) | 
+| Magic (magic) | 
+| Body Hash (txbodyhash) | 
 
 Body
 Random Number (prng)
