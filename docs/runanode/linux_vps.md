@@ -64,8 +64,13 @@ curl 127.0.0.1:9122/incentivecash%20uid:xxx-xxx-xxx-xxx-xxx
 
 Your Incentive Program account is now connected to your node!
 
-**Current rewards:** This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
-**Last Ping:** This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
+:::tip Current rewards
+This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
+:::
+
+:::tip Last Ping
+This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
+:::
 
 3. Your node will then ping us so we know it's running. 
 
@@ -75,7 +80,9 @@ Your Incentive Program account is now connected to your node!
 You may need to type journalctl -u minima -f to show the Minima Logs before running the IncentiveCash command. 
 ![Linux](/img/runanode/linux_2.png)
 
+:::tip Note 
 **Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+:::
 
 
 ## Useful Commands

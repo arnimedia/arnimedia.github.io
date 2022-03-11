@@ -7,7 +7,7 @@ sidebar_position: 3
 Minima was born out of the desire to achieve what Bitcoin originally sought to achieve; a truly decentralized, censorship resistant, peer-to-peer, electronic cash system. Over time, Bitcoin mining has become more centralized due to its competitive nature and game theory suggests this is only headed in one direction, towards centralization. 
 
 ## Bitcoin node count since 2017:
-![Docusaurus logo](/img/about/bitcoin.png)
+![Bitcoin node count since 2017](/img/about/bitcoin.png)
 
 
 Source: [Bitcoin Node Count History](https://luke.dashjr.org/programs/bitcoin/files/charts/historical.html) 
