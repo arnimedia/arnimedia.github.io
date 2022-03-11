@@ -88,9 +88,16 @@ Each coin has the following attributes:
 
 | Coin Attribute | Description |
 | ----------- | ----------- |
-| CoinID | The globally unique identifier for a coin. 
-The coin id of a new UTxO is
-hash(first input coin in txn |  output_num_in_txn)|
+| CoinID | The globally unique identifier for a coin. The coin id of a new UTxO is hash(first input coin in txn  / output_num_in_txn)|
+| Amount | The amount of 'Minima'. Even custom token transactions are just amounts of coloured Minima (see coloured coins)|
+| Address | The hash of a script. If no custom script is provided,the script will simply be RETURN(SIGNEDBY([PublicKey of coin owner]) i.e. the  transaction must be signed by the coin owner before it can be spent. All addresses are P2SH (Pay to Script Hash).|
+| TokenID | The token id. Minima is 0x00. Everything else has a full 64 byte hash. Tokens are created by colouring Minima.|
+| Floating | True or False. Set when you create a transaction. If True, the coinid is ignored so that any valid coin that has the same amount, address and TokenID can be used. |
+| Store State | True or False, depending on whether the state is stored for this coin | 
+| State | The state variables(0-255) of the transaction this coin was created in. You can access this data from scripts. |
+| MMR Entry | The MMR database entry number for this coin |
+| Spent | True or False, depending on whether this coin has been spent or not. |
+| Created | The block number this coin was created in. | 
 | ----------- | ----------- |
 
 Coin Attribute
