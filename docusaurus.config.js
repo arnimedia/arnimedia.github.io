@@ -65,7 +65,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'runanode',
+            docId: 'runanode/get_started_in_3_steps',
             position: 'left',
             label: 'Run a node',
           },
