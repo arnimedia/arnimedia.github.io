@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Run a node',
-    link: 'docs/vision',
+    link: 'runanode/get_started_in_3_steps',
     description: (
       <>
         Learn how to install and run a validating and constructing Minima node on your device.
