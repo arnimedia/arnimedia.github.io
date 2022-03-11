@@ -98,7 +98,6 @@ Each coin has the following attributes:
 | MMR Entry | The MMR database entry number for this coin |
 | Spent | True or False, depending on whether this coin has been spent or not. |
 | Created | The block number this coin was created in. | 
-| ----------- | ----------- |
 
 #### Transaction Inputs
 Transaction inputs identify which coins will be spent in the transaction, by providing the coin ID. One or more coins may be required depending on the value of the coins owned by the user and the amount they wish to spend. 
