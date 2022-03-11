@@ -8,6 +8,7 @@ Running a Minima node couldn't be easier, and if you choose to join our Incentiv
 
 Get started in 3 steps:
 1. Register for the [Incentive Program](https://incentive.minima.global/account/register)
-Please make sure you use an email address that you won’t lose access to.
 2. Set up your node (see instructions below)
 3. Connect your node to your Incentive Program account
+
+**Please make sure you use an email address that you won’t lose access to.**
