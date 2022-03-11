@@ -22,4 +22,47 @@ Scalability can be achieved through various Layer 2 solutions, such as a ‘Ligh
 
 Minima also enables smart contracts with a Turing-complete scripting language, providing a censorship-resistant platform for ‘Web 3’ applications.
 
+import DocusaurusSvg from './docusaurus.svg';
+
+<DocusaurusSvg />;
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+Regular Markdown images are supported.
+
+Add an image at `static/img/docusaurus.png` and display it in Markdown:
+
+```md
+![Docusaurus logo](/img/docusaurus.png)
+```
+
+![Docusaurus logo](/img/docusaurus.png)
+
+## Code Blocks
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`);
+    }}>
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+
+
 
