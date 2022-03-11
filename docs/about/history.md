@@ -18,9 +18,9 @@ As a Coder, how could he not try and write his own version of Bitcoin? His visio
 He wanted to ensure that what he felt was happening to Bitcoin, would never happen to Minima. Minima was designed by him, for him. Minima is the cryptocurrency he wanted to be using.
 
 ## Inspiration
-“Creative thinking is not about generating something new from a blank slate, but rather about taking what is already present and combining those bits and pieces in a way that has not been done previously.” - James Clear
+**“Creative thinking is not about generating something new from a blank slate, but rather about taking what is already present and combining those bits and pieces in a way that has not been done previously.” - James Clear**
 
-Minima takes inspiration from and combines much great previous work including 
+Minima takes inspiration from and combines much great previous work including
 
 - [Satoshi Nakomoto’s Bitcoin](https://bitcoin.modeapp.com/bitcoin-white-paper.pdf) (UTxO model); 
 - [IOTA](https://www.iota.org/) (Removing miners - user based PoW security); 
