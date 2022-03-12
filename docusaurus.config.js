@@ -71,7 +71,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'docs/minimaincentiveprogram',
+            docId: 'minimaincentiveprogram',
             position: 'left',
             label: 'Incentive Program',
           },
