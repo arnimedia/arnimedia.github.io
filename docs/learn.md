@@ -212,10 +212,10 @@ When the node has checked that a TxPoW unit is valid, it will process it, adding
 
 Diagram: The structure of a TxPoW Unit
 
-TxPoW ID
+**TxPoW ID**
 
 | Header |
-| -------------- |
+| :-------------- |
 | Nonce (nonce) | 
 | TimeMilli (timemilli) | 
 | Block Number (block) | 
@@ -227,41 +227,31 @@ TxPoW ID
 | Magic (magic) | 
 | Body Hash (txbodyhash) | 
 
-Body
-Random Number (prng)
-Txn Difficulty (txndiff)
-A Transaction (txn)
-A Witness (witness)
-Burn Txn (burntxn)
-Burn Witness (burnwitness)
-Txn List (txnlist)
+| Body |
+| :-------------- |
+| Random Number (prng) |
+| Txn Difficulty (txndiff) |
+| A Transaction (txn) |
+| A Witness (witness) |
+| Burn Txn (burntxn) |
+| Burn Witness (burnwitness) |
+| Txn List (txnlist) |
 
 
+### Header
 
-Header
-
-Header Field
-Description
-Nonce
-The final nonce (number) that was included in the TxPoW header so that, when hashed, the required difficulty was achieved.
-TimeMilli
-Time this TxPoW was created in milliseconds since the epoch of 1970-01-01T00:00:00Z
-Block Number
-Block height to be used if this TxPoW unit becomes a block
-Block Difficulty
-The Difficulty required for this unit to be considered a valid block
-Cascade Levels
-The maximum number of levels in the Cascade (32)
-Super Parents
-Pointer to its immediate previous block and to the most recent block at each Super level. Used for cascading.
-MMR Root
-The root hash of the MMR (to prove coins existed using a proof and header)
-MMR Total
-The sum of all coins in the system (using a hash sum tree, the total amount of Minima is known every block removing the possibility of inflation bugs)
-Magic
-Chain parameters - the magic numbers: desiredmaxtxpow, desiredmaxtxn, desiredmintxpowwork, maxtxpow,maxtxn,mintxpowwork
-TxBodyHash
- The hash of the TxPoW body
+| Header Field | Description | 
+| -------------- | -------------- |
+| Nonce | The final nonce (number) that was included in the TxPoW header so that, when hashed, the required difficulty was achieved. 
+| TimeMilli | Time this TxPoW was created in milliseconds since the epoch of 1970-01-01T00:00:00Z |
+| Block Number | Block height to be used if this TxPoW unit becomes a block |
+| Block Difficulty | The Difficulty required for this unit to be considered a valid block |
+| Cascade Levels | The maximum number of levels in the Cascade (32) |
+| Super Parents | Pointer to its immediate previous block and to the most recent block at each Super level. Used for cascading. |
+| MMR Root | The root hash of the MMR (to prove coins existed using a proof and header) |
+| MMR Total | The sum of all coins in the system (using a hash sum tree, the total amount of Minima is known every block removing the possibility of inflation bugs) |
+| Magic | Chain parameters - the magic numbers: desiredmaxtxpow, desiredmaxtxn, desiredmintxpowwork, maxtxpow,maxtxn,mintxpowwork |
+| TxBodyHash | The hash of the TxPoW body |
 
 
 
