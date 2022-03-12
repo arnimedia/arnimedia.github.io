@@ -240,8 +240,8 @@ Diagram: The structure of a TxPoW Unit
 
 ### Header
 
-| Header Field | Description | 
-| -------------- | -------------- |
+|      Header Field    | Description | 
+| -------------------- | -------------------- |
 | Nonce | The final nonce (number) that was included in the TxPoW header so that, when hashed, the required difficulty was achieved. 
 | TimeMilli | Time this TxPoW was created in milliseconds since the epoch of 1970-01-01T00:00:00Z |
 | Block Number | Block height to be used if this TxPoW unit becomes a block |
@@ -255,43 +255,36 @@ Diagram: The structure of a TxPoW Unit
 
 
 
-Body
+### Body
 
-Body Field
-Description
-Random Number
-A Random number so that everyone is working on a different TxPoW in the pulse 
-Txn Difficulty
-The Difficulty required for this unit to be a valid TxPoW unit. The value that all users try to achieve when cycling through nonce values.
-A Transaction
-Transaction ID for the main transaction. 
-UTxO (coin) inputs, outputs, state variables, linkhash and 
-A Witness
-Signature Proofs, MMR Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn), Script Proofs (for the various P2SH addresses used)
-Burn Txn
-Inputs, outputs, state variables, linkhash and transaction ID for the Burn transaction paying for the transaction the user is trying to send. Can be empty.
-Burn Witness
-The Witness data for the Burn. Signatures, MMR Proofs and scripts. Can be empty.
-Txn List
-List of the hashes of mempool transactions to propagate. These will become confirmed if this TxPoW unit becomes a block. Only the hash of transactions are added since transactions have already been sent across the network.
+| Body Field | Description |
+| -------------------- | -------------------- |
+| Random Number | A Random number so that everyone is working on a different TxPoW in the pulse | 
+| Txn Difficulty | The Difficulty required for this unit to be a valid TxPoW unit. The value that all users try to achieve when cycling through nonce values. |
+| A Transaction | Transaction ID for the main transaction. UTxO (coin) inputs, outputs, state variables, linkhash and |
+| A Witness | Signature Proofs, MMR Proofs (pointing to a valid unspent MMR entry in the past 24 hours for each input coin used in the txn), Script Proofs (for the various P2SH addresses used) |
+| Burn Txn | Inputs, outputs, state variables, linkhash and transaction ID for the Burn transaction paying for the transaction the user is trying to send. Can be empty. |
+| Burn Witness | The Witness data for the Burn. Signatures, MMR Proofs and scripts. Can be empty. |
+| Txn List | List of the hashes of mempool transactions to propagate. These will become confirmed if this TxPoW unit becomes a block. Only the hash of transactions are added since transactions have already been sent across the network. |
 
 
-The Blockchain
-Overview
+## The Blockchain
+### Overview
 The Minima blockchain is structured to be compact and ‘lightweight’, it is therefore heavily pruned to meet this requirement. The chain itself is a tree of TxPoW blocks which hold transactions. 
+
 As the TxPow tree is pruned periodically, the headers from the ‘heaviest’ blocks (blocks with the highest difficulty by chance) are added into a ‘Cascading’ chain. The root of the TxPow tree always remains connected to the tip of the Cascading chain.
 
 The TxPoW tree is the main blockchain, a chain of the most recent TxPoW units that met the difficulty required to become a block. 
 The Cascading chain is an unbroken chain of the headers of so called ‘super blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis.
 
-TxPoW Tree
-The TxPoW tree is the main blockchain and has a root - the start of the chain, tip - end of the chain, blocks (nodes) and length (number of blocks).
+### TxPoW Tree
+The **TxPoW tree** is the main blockchain and has a root - the start of the chain, tip - end of the chain, blocks (nodes) and length (number of blocks).
 The root of the chain meets the tip of the Cascade.
 
-If a TxPoW unit becomes a block, it will have a static base weight equal to its difficulty and a total weight equal to its base weight plus the sum of the weights of its children. 
+If a TxPoW unit becomes a block, it will have a static **base weight** equal to its difficulty and a total weight equal to its base weight plus the sum of the weights of its children. 
 
-Base weight = Difficulty (i.e. number of hashes it took to mine the block)
-Total weight = Base weight + Sum(Base weight of all children) 
+**Base weight** = Difficulty (i.e. number of hashes it took to mine the block)
+**Total weight** = Base weight + Sum(Base weight of all children) 
 
 By default, all blocks in the chain are Level 0 blocks.
 
@@ -301,91 +294,107 @@ All blocks in the tree are stored in a fast link hash table which provides a qui
 Key (K) - TxPoW ID 
 Value (V) - TxPoW object
 
-The Cascading Chain
+### The Cascading Chain
 
-Cascading Chain
-
-
-Ghost algorithm 
+### Ghost algorithm 
 The GHOST (Greedy Heaviest Observed SubTree) protocol is used by Minima nodes to come to consensus on which chain is the valid one when multiple branches are established. Branching occurs naturally when two blocks with the same number (block height) are found simultaneously. 
+
 Rather than using the simple ‘Longest chain’ rule, where the valid chain is considered to be the one with the most number of blocks in it, GHOST considers the ‘heaviest’ chain to be the valid one. The ‘heaviest’ chain is the branch which has had the most Proof-of-Work put into it.
+
 The faster the block time, the more likely it is that two blocks of the same number (height) will be found. If a simple ‘Longest chain’ rule applies, fast block times can reduce the security of the network if an attacker is able to secretly build a longer chain.
+
 GHOST was originally proposed as an alternative to Longest Chain by Sompolinsky and Zohar in the paper Secure High-Rate Transaction Processing in Bitcoin. 
+
 Diagram illustrating the the main chain according to GHOST:
 
-Quantum Security
+## Quantum Security
+
 If Minima is truly expected to stand the test of time, it must be Quantum secure from the beginning. Once scaled to millions of nodes, each being complete - constructing and validating - nodes, the consensus critical components of the protocol must be finished, requiring no future changes.
 Minima’s approach to Quantum security is two-fold:
-Hashing
+### Hashing
 Minima uses the Keccak hash algorithm with a hash strength of 256, considered to be post-quantum sufficient by the National Institute of Standards and Technology (NIST) see: https://csrc.nist.gov/csrc/media/projects/hash-functions/documents/keccak-slides-at-nist.pdf
+
 Keccak is used for TxPoW mining, block and transaction hashes, proof chains, and signing or verifying data. All of the cryptographic security of Minima is provided by hash functions.
-Signatures
-Minima uses Winternitz One Time Signature (WOTS) with a Winternitz parameter of 8. WOTS is a hash based digital signature scheme which is considered quantum resistant.
-https://eprint.iacr.org/2011/191.pdf
+
+### Signatures
+Minima uses Winternitz One Time Signature (WOTS) with a Winternitz parameter of 8. WOTS is a hash based digital signature scheme which is considered quantum resistant. https://eprint.iacr.org/2011/191.pdf
+
 The cost of being Quantum secure is that signatures are at least 10-20x as big as Elliptic Curve Digital Signature Algorithm (ECDSA) used in Bitcoin. A one time use WOTS is 400-800 bytes. Minima signatures are certainly large when compared to normal Bitcoin transactions, but they are not kept forever since almost all data is eventually pruned, so although a bandwidth issue, they are only a temporary storage overhead
 
-Coloured coins
+### Coloured coins
 Minima is the native coin for the Minima blockchain. Each UTxO is defined as a coin and therefore a coin can be worth any amount of Minima. 
 Minima supports custom tokens (including NFTs) natively. Tokens are Coloured coins. Coloured coins are tiny fractions of Minima which represent the supply of a custom token or NFT.
+
 Custom tokens are specified by the following characteristics:
-TokenID
-Created after all the details are set, by hashing the coinid and total amount. Each TokenID is globally unique
-Token Name/
-Description
-A String description that can be just a name or a full JSON.
-CoinID
-The CoinID used when creating the token initially 
-Total
-The total number of these tokens
-Decimals
-The number of decimal places to use for the token
-Script
-The token script 
-Total Amount
-The total amount of Minima coloured to be this token. Since Minima uses 44 decimal places, if you colour 1E-33 (0.000000000000000000000000000000001) Minima, that is 1000 tokens with 8 decimal places. i.e. 0.000000000000000000000000000000001000.00000000
-Scale
-The scale of the Token vs the amount. In the example above, the scale is 36
+
+| ----------- | ------------|
+| TokenID | Created after all the details are set, by hashing the coinid and total amount. Each TokenID is globally unique |
+| Token Name/Description | A String description that can be just a name or a full JSON. |
+| CoinID | The CoinID used when creating the token initially |
+| Total | The total number of these tokens |
+| Decimals | The number of decimal places to use for the token |
+| Script | The token script |
+| Total Amount | The total amount of Minima coloured to be this token. Since Minima uses 44 decimal places, if you colour 1E-33 (0.000000000000000000000000000000001) Minima, that is 1000 tokens with 8 decimal places. i.e. 0.000000000000000000000000000000001000.00000000 |
+| Scale | The scale of the Token vs the amount. In the example above, the scale is 36 |
 
 
 NFTs are simply custom tokens with no decimal places i.e. they can only be spent whole.
-Smart Contracts
+## Smart Contracts
 Minima has its own,Turing Complete, scripting language for creating Smart Contracts. 
+
 Minima, like Bitcoin, uses the UTxO model so writing smart contracts on Minima is quite different to writing them on an Account based model like Ethereum. 
 A Minima script (contract) returns TRUE or FALSE. The default is return FALSE, so all scripts must explicitly RETURN TRUE for the transaction to be valid.
+
 A script can run for 512 instructions. An instruction is 1 operation or function.
+
 The process to create a basic Smart Contract is as follows:
-Write a script that will return TRUE when the funds should be spendable
-Create the script, determining the address of the script. The address is the hash of the script. 
-Send funds to the script address and set the state variables, this will lock the funds in a coin.
-Add the coin as an input to a transaction. A transaction in Minima is a set of input coins, a set of output coins and a state variable list from 0-255. Each ‘coin’ has an amount, address (script hash), tokenid and coinid. 
-The transaction will only be valid when the script in the input coin returns TRUE, at which point the amount in the coin can be spent - in full.
+
+1. Write a script that will return TRUE when the funds should be spendable
+2. Create the script, determining the address of the script. The address is the hash of the script. 
+3. Send funds to the script address and set the state variables, this will lock the funds in a coin.
+4. Add the coin as an input to a transaction. A transaction in Minima is a set of input coins, a set of output coins and a state variable list from 0-255. Each ‘coin’ has an amount, address (script hash), tokenid and coinid. 
+5. The transaction will only be valid when the script in the input coin returns TRUE, at which point the amount in the coin can be spent - in full.
+
 A ‘contract’ is the script that locks the funds in a coin and is interchangeable with the word script.
+
 A transaction can be signed by 1 or more public keys - and Signatures can even be added as state variables if you want oracle style contracts. Minima script is case sensitive.
+
 The addition of the state variables in the MMR Proof DB, allow for complex scripts with knowledge of their past to be created. A simple state mechanic for transactional history rather than a global state for ALL transactions.
+
 Each user tracks the coins to an address they possess and all coins that have a public key or address they possess in the STATE or PREVSTATE.
+
 Minima transactions are scriptable Logic Gates, with analogue inputs and outputs, a simple yet powerful control language, and a previous history state mechanic.
+
 Contracts are inherently compatible with Layer 2. 
+
 The scripting language supports SHA2-256 to allow cross-chain hash lock contracts with legacy chains.
+
 Types of Contracts possible:
-Basic Signed 
-Time Lock 
-Multi-sig 
-Complex multi-sig 
-M of N multi-sig 
-Hashed Time Lock (including cross-chain)
-Exchange
-FlashCash
-MAST 
+- Basic Signed 
+- Time Lock 
+- Multi-sig 
+- Complex multi-sig 
+- M of N multi-sig 
+- Hashed Time Lock (including cross-chain)
+- Exchange
+- FlashCash
+- MAST 
+
 Example multi-sig contract: 
+```
 scripts action:newscript track:true script:"RETURN SIGNEDBY(0x1539C2B974C1589C6AB3C734AA41D8E7D999759EFE057B047B200E836BA526 8A) AND SIGNEDBY(0xAD25E1E40605A68AFE357ECF83E51FE27EC10013851AE95889A00C695D5B94 02)" 
+```
 
+### Token Scripts
 
-Token Scripts
 Each token has a separate script that must also return TRUE when attempting to spend a UTxO. For instance this could be 'make sure 1% is sent to this address, for a charity coin, 
+```
 RETURN VERIFYOUT(@INPUT CHARITY_ADDRESS @AMOUNT*0.01 @TOKENID) 
-
+```
 or a counter mechanism that checks a counter has been incremented:
+```
 RETURN STATE(99) EQ INC(PREVSTATE(99))
+```
+**Both the address script and the Token script must return TRUE.**
 
-Both the address script and the Token script must return TRUE.
 A token by default has RETURN TRUE as it's script. This token structure is added to any transaction wishing to use that token so every user can know how many, what scripts, name etc of the Token is correct and valid. 
