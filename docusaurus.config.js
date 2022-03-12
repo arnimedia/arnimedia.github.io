@@ -53,25 +53,25 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'about/vision',
+            docId: 'docs/about/vision',
             position: 'left',
             label: 'Vision',
           },
           {
             type: 'doc',
-            docId: 'learn',
+            docId: 'docs/learn',
             position: 'left',
             label: 'Learn',
           },
           {
             type: 'doc',
-            docId: 'runanode/get_started_in_3_steps',
+            docId: 'docs/runanode/get_started_in_3_steps',
             position: 'left',
             label: 'Run a node',
           },
           {
             type: 'doc',
-            docId: 'minimaincentiveprogram',
+            docId: 'docs/minimaincentiveprogram',
             position: 'left',
             label: 'Incentive Program',
           },
