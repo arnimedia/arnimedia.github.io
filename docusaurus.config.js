@@ -53,19 +53,19 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: '/about/vision',
+            docId: 'about/vision',
             position: 'left',
             label: 'Vision',
           },
           {
             type: 'doc',
-            docId: '/learn',
+            docId: 'learn',
             position: 'left',
             label: 'Learn',
           },
           {
             type: 'doc',
-            docId: '/runanode/get_started_in_3_steps',
+            docId: 'runanode/get_started_in_3_steps',
             position: 'left',
             label: 'Run a node',
           },
