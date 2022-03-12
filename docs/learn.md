@@ -283,8 +283,10 @@ The root of the chain meets the tip of the Cascade.
 
 If a TxPoW unit becomes a block, it will have a static **base weight** equal to its difficulty and a total weight equal to its base weight plus the sum of the weights of its children. 
 
-**Base weight** = Difficulty (i.e. number of hashes it took to mine the block).
-**Total weight** = Base weight + Sum(Base weight of all children). 
+:::note
+**Base weight** = Difficulty (i.e. number of hashes it took to mine the block) /n
+**Total weight** = Base weight + Sum(Base weight of all children) 
+:::
 
 By default, all blocks in the chain are Level 0 blocks.
 
