@@ -59,7 +59,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'about/vision',
+            docId: 'learn',
             position: 'left',
             label: 'Learn',
           },
