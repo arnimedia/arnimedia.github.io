@@ -51,30 +51,33 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'about/vision',
-            position: 'left',
-            label: 'Vision',
-          },
-          {
-            type: 'doc',
-            docId: 'learn',
-            position: 'left',
-            label: 'Learn',
-          },
-          {
-            type: 'doc',
-            docId: 'runanode/get_started_in_3_steps',
-            position: 'left',
-            label: 'Run a node',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'about/vision',
+          //   position: 'left',
+          //   label: 'Vision',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'learn',
+          //   position: 'left',
+          //   label: 'Learn',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'runanode/get_started_in_3_steps',
+          //   position: 'left',
+          //   label: 'Run a node',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'minimaincentiveprogram',
           //   position: 'left',
           //   label: 'Incentive Program',
           // },
+          {to: '/docs/about/vision', label: 'Vision', position: 'left'},
+          {to: '/docs/learn', label: 'Learn', position: 'left'},
+          {to: '/docs/runanode/get_started_in_3_steps', label: 'Run a node', position: 'left'},
           {to: '/docs/minimaincentiveprogram', label: 'Incentive Program', position: 'left'},
           {
             href: 'https://minima.global/get-involved#community',
