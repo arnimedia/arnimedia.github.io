@@ -53,7 +53,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'about/vision',
+            docId: '/docs/about/vision',
             position: 'left',
             label: 'Vision',
           },
