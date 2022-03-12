@@ -40,7 +40,7 @@ The process you need to follow is:
 
 
 ## What are the XP Levels and Ambassador Ranks?
-![Ambassador](/img/ambassador/ambassador_2.png)
+![Ambassador](/img/ambassador/ambassador_2.jpeg)
 
 ## What do the Ambassador Ranks get me?
 
