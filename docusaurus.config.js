@@ -69,7 +69,13 @@ const config = {
             position: 'left',
             label: 'Run a node',
           },
-          {to: '/blog', label: 'Incentive Program', position: 'left'},
+          {
+            type: 'doc',
+            docId: 'docs/minimaincentiveprogram',
+            position: 'left',
+            label: 'Incentive Program',
+          },
+          // {to: '/blog', label: 'Incentive Program', position: 'left'},
           {
             href: 'https://minima.global/get-involved#community',
             label: 'Community',
