@@ -13,6 +13,8 @@ On-chain
 
 Minima is a censorship resistant value transfer layer. All transactions are processed by all nodes on the network. It is flood-fill. It uses a P2P system as its backbone for communication between nodes.
 
+![Minima](/img/learn/learn_1.png)
+
 The Minima blockchain is where all on-chain transactions are processed. Every node in the network collectively comes to consensus on the state of the blockchain so all transactions are accounted for.
 Users initiate their transacting relationships on Layer 1, prior to moving off-chain to use Layer 2 for faster and cheaper transactions. As the trust layer of the protocol, Layer 1 is also used for settling any disputes between users on Layer 2.
 
@@ -22,6 +24,8 @@ Off-chain
 
 Maxima is the censorship resistant information transport layer running over the Minima network. Communication is point-to-point. Messages can be sent, off-chain, to chosen connected peers.
 
+![Minima](/img/learn/learn_2.png)
+
 Maxima is an information transport layer, enabling encrypted, peer-to-peer exchange of information between 1st and 2nd degree connections on the Minima network.
 Maxima can be used to build censorship resistant messaging applications over the Minima network and will be used for sending messages for Layer 2 communication.
 
@@ -30,9 +34,13 @@ Value transfer
 Off-chain
 
 Layer 2 is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using technology similar to Bitcoin’s Lightning Network.
+
 Minima can also support alternative scaling solutions such as state channels and side chains with the potential for further solutions in the future. 
 
+![Minima](/img/learn/learn_3.png)
+
 Once users have set up their transacting relationship on Minima, they can perform all transactions off-chain, on Layer 2. This is where the bulk of peer-to-peer exchange between users of the network takes place. It is faster, as each payment is not settled on the blockchain and transactions are only processed by the relevant users rather than the entire network, as occurs on Layer 1.
+
 Using multi-signature smart contracts and payment channels, users can keep a ‘tab’ of their unsettled balances indefinitely, until they wish to settle on Layer 1.
 This unlocks the possibility of essentially unlimited transactions per second (TPS).
 
@@ -43,6 +51,8 @@ MiniDapps are truly decentralised applications built using the functionality ena
 1. Value transfer on Minima
 2. Information transfer on Maxima
 3. Unlimited transaction per seconds on Layer 2 solutions
+
+![Minima](/img/learn/learn_4.png)
 
 MiniDapps are decentralized applications combining the utility provided by Minima, Maxima and Layer 2 with Minima’s scripting language. The front-end for MiniDapps can be written using the widely known JavaScript, HTML and CSS.
 Minima’s KISS scripting language is Turing-Complete, allowing for powerful smart contract driven applications. Building a MiniDapp is accessible to any web developer.
@@ -57,6 +67,8 @@ The Minima blockchain keeps track of the UTxO set on the network and who can spe
 One or more UTxOs are used as inputs into transactions and one or more new UTxOs will be created as outputs.
 
 The example below shows a transaction of 30 Minima from Bob to Alice. A UTxO worth 50 Minima is used as an input and two new UTxOs are created as outputs - one worth 30 Minima which is sent to the recipient and one of 20 Minima which is returned to the sender as change. Just like change is received when physical coins are spent.
+
+![Minima](/img/learn/learn_5.png)
 
 ### MMR (Merkle Mountain Range) Database 
 As the tree is constantly pruned, users must keep track of their spent and unspent TxOs (transaction outputs)independently of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
@@ -177,6 +189,8 @@ When a user wishes to spend their coins, they must prove their coins are unspent
 A node receiving the proofs will check the coins are valid by summing the hashes provided and ensuring it matches the Merkle root they possess themselves.
 Diagram: A complete Merkle Mountain Range (MMR) with three peaks and root
 
+![Minima](/img/learn/learn_6.png)
+
 A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
 Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
 
@@ -283,8 +297,9 @@ The root of the chain meets the tip of the Cascade.
 
 If a TxPoW unit becomes a block, it will have a static **base weight** equal to its difficulty and a total weight equal to its base weight plus the sum of the weights of its children. 
 
-:::note
-**Base weight** = Difficulty (i.e. number of hashes it took to mine the block) /n
+:::note Weights
+**Base weight** = Difficulty (i.e. number of hashes it took to mine the block)
+
 **Total weight** = Base weight + Sum(Base weight of all children) 
 :::
 
@@ -308,6 +323,8 @@ The faster the block time, the more likely it is that two blocks of the same num
 GHOST was originally proposed as an alternative to Longest Chain by Sompolinsky and Zohar in the paper Secure High-Rate Transaction Processing in Bitcoin. 
 
 Diagram illustrating the the main chain according to GHOST:
+
+![Minima](/img/learn/learn_7.png)
 
 ## Quantum Security
 
