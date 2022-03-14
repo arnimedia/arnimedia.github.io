@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Learn',
-    link: 'docs/about/vision',
+    link: 'docs/learn/networkoverview',
     description: (
       <>
         An in-depth introduction to the Minima protocol and it’s architecture.
@@ -32,7 +32,7 @@ const FeatureList = [
   },
   {
     title: 'Earn Rewards',
-    link: 'docs/vision',
+    link: 'docs/minimaincentiveprogram',
     description: (
       <>
         Learn about the Minima Incentive Program
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Ambassador',
-    link: '/docs/runanode/get_started_in_3_steps',
+    link: 'docs/ambassador',
     description: (
       <>
         Learn how to become a Minima ambassador and what Rewards you could earn
@@ -50,7 +50,7 @@ const FeatureList = [
   },
   {
     title: 'Tokenomics',
-    link: 'docs/vision',
+    link: 'docs/tokendistribution',
     description: (
       <>
         Find out how a fixed supply of 1 Billion coins have been distributed.
