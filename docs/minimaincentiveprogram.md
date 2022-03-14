@@ -9,7 +9,7 @@ The Incentive Program is designed to reward you for installing and running a Min
 You will receive one Reward every day your node pings us to let us know it is connected.
 
 ## How do I get involved?
-Create your Incentive Program Account today here.
+[Create your Incentive Program Account today here.](https://incentivecash.minima.global/)
 
 ## How many Rewards can I earn?
 You will earn 1 x Minima reward each day. These rewards will be added to your balance daily. You can also earn rewards by finding bugs as a tester, participating in one of the test cycles. Let one of the team know in Discord if this is of interest.
@@ -17,11 +17,11 @@ You will earn 1 x Minima reward each day. These rewards will be added to your ba
 ## Why is Minima offering this?
 As we test and improve Minima ahead of our Mainnet launch, your participation is precious to us. Together, we can collaboratively:
 
-## Grow the Minima network
-Test how different devices operate
-Find or fix bugs on the Minima Testnet
-Perfect the Minima application and protocol for Mainnet launch
-Help grow the Minima community membership and participation
+- Grow the Minima network
+- Test how different devices operate
+- Find or fix bugs on the Minima Testnet
+- Perfect the Minima application and protocol for Mainnet launch
+- Help grow the Minima community membership and participation
 
 ## What equipment do I need?
 To participate, you will need an Android mobile (9.0 or above), PC, Mac or Linux. Minima currently doesn’t run on iPhone/iOS, but this is on the future roadmap.
@@ -36,7 +36,7 @@ In the run-up to Mainnet, there will likely be several upgrades to the system. T
 Everyone in the Incentive Program will get their rewards at the Token Generation Event (TGE). This is scheduled to be in Q3 2022. 
 
 ## How do I report a bug?
-Please head to the #download-and-bugs channel on our Discord Server. There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.
+Please head to the #download-and-bugs channel on our [Discord Server](https://discord.gg/ZQaUXPape5). There you will find full instructions for raising your bug. Should you need help doing so, contact any of the Community Team who will be happy to assist.
 
 ## How can I find out more?
 The best way to learn more and ask questions is to join our community channels below:
