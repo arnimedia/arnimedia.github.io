@@ -49,7 +49,7 @@ Used for a burn transaction. The linkhash of a burn transaction is the transacti
 Diagram: Main transaction structure
 
 
-:::tip Transaction ID: Hash(Transaction object)
+:::info Transaction ID: Hash(Transaction object)
 
 Inputs
 
@@ -62,7 +62,7 @@ Linkhash (0x00)
 
 
 Diagram: Burn transaction structure
-:::tip Transaction ID: Hash(Transaction object)
+:::info Transaction ID: Hash(Transaction object)
 
 
 Inputs (matching the main txn)
