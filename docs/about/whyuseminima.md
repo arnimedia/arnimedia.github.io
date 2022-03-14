@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-#Why use Minima?
+# Why use Minima?
 
 ## The world’s first completely decentralized blockchain
 Everyone running Minima is working together to secure the network. Unlike miners, we are not competing, we are collaborating, as equals. And when everyone is equal the network becomes 100% decentralized.
