@@ -13,7 +13,7 @@ One or more UTxOs are used as inputs into transactions and one or more new UTxOs
 
 The example below shows a transaction of 30 Minima from Bob to Alice. A UTxO worth 50 Minima is used as an input and two new UTxOs are created as outputs - one worth 30 Minima which is sent to the recipient and one of 20 Minima which is returned to the sender as change. Just like change is received when physical coins are spent.
 
-![Minima](/img/learn/learn_5.png)
+![Core Concepts](/img/learn/Core Concepts-01.svg#gh-light-mode-only)![Core Concepts](/img/learn/Core Concepts-02.svg#gh-dark-mode-only)
 
 ## MMR (Merkle Mountain Range) Database 
 As the tree is constantly pruned, users must keep track of their spent and unspent TxOs (transaction outputs)independently of the chain. Each TxO has a proof that forms part of a hash sum tree and these are stored in the user’s MMR database. 
