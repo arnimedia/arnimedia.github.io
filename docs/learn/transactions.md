@@ -46,33 +46,25 @@ Transactions also include State Variables for storing public data and previous t
 ### Linkhash 
 
 Used for a burn transaction. The linkhash of a burn transaction is the transaction ID of the main transaction it relates to. This means that the burn transaction can only be spent with the transaction it is linked to.  For normal transactions, it is set to 0x00.
+
 Diagram: Main transaction structure
 
-
-:::info Transaction ID: Hash(Transaction object)
-
-Inputs
-
-Outputs
-
-State Variables (0-255)
-
-Linkhash (0x00)
-:::
-
+| Transaction ID: Hash(Transaction object) |
+| -----------------------------------------|
+| Inputs |
+| Outputs |
+| State Variables (0-255) |
+| Linkhash (0x00) |
 
 Diagram: Burn transaction structure
-:::info Transaction ID: Hash(Transaction object)
 
+| Transaction ID: Hash(Transaction object) |
+| ---------------------------------------- |
+| Inputs (matching the main txn) |
+| Output (amount to burn) |
+| State Variables (matching the main txn) |
+| Linkhash (main txn ID) |
 
-Inputs (matching the main txn)
-
-Output (amount to burn)
-
-State Variables (matching the main txn)
-
-Linkhash (main txn ID)
-:::
 
 ## Transaction Validity
 
