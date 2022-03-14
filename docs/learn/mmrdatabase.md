@@ -22,6 +22,7 @@ A node receiving the proofs will check the coins are valid by summing the hashes
 Diagram: A complete Merkle Mountain Range (MMR) with three peaks and root
 
 ![Minima](/img/learn/learn_6.png)
+![Minima](/img/network/mMRDatabaseLm.svg#gh-light-mode-only)![Minima](/img/network/mMRDatabaseDm.svg#gh-dark-mode-only)
 
 A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
 Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
