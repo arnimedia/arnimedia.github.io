@@ -5,9 +5,9 @@ sidebar_position: 2
 # Hugo Feiler
 Co-Founder & Chief Executive Officer
  
-![Hugo Feiler](/img/poeple/Hugo.png)
+![Hugo Feiler](/img/people/Hugo.png)
  
-[Image Download](/img/poeple/Hugo.png) | [Twitter](https://twitter.com/HugoFeiler) | [LinkedIn](https://www.linkedin.com/in/hugo-feiler-b7529b4)
+[Image Download](/img/people/Hugo.png) | [Twitter](https://twitter.com/HugoFeiler) | [LinkedIn](https://www.linkedin.com/in/hugo-feiler-b7529b4)
  
 Hugo Feiler is an entrepreneur with over two decades of experience in the marketing communication space. He has run and founded leading marketing agencies, creating global campaigns for companies including Vodafone, Toshiba and Sony Electronics. He was previously a General Manager at Sony Europe. Minima was launched at the end of 2018.
  

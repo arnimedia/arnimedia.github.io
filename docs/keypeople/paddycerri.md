@@ -5,9 +5,9 @@ sidebar_position: 1
 # Paddy Cerri
 Co-Founder & Chief Blockchain Architect 
  
-![Paddy Cerri](/img/poeple/Paddy.png)
+![Paddy Cerri](/img/people/Paddy.png)
  
-[Image Download](/img/poeple/Paddy.png) | [Twitter](https://twitter.com/Spartacuswrecks) 
+[Image Download](/img/people/Paddy.png) | [Twitter](https://twitter.com/Spartacuswrecks) 
  
 Paddy is a true crypto evangelist. He joined the Bitcoin community back in 2012 and has been an active contributor on the forums ever since. A full-stack coder, he conceptualised the Minima protocol over the last 5 years. Drawing extensive coding and engineering experience from multiple areas ranging from physics engines, creating crypto exchanges, and launching consumer and tech-focused apps to 10M+ users. 
  
