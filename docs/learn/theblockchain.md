@@ -31,8 +31,8 @@ Key (K) - TxPoW ID
 
 Value (V) - TxPoW object
 
-## The Cascading Chain
-[The Cascading Chain](https://docs.google.com/document/d/1Or8-8Zq2AO6qaRqMq0dUb-5LaGF5SNf3tZyiSNfF-x4/edit)
+<!-- ## The Cascading Chain
+[The Cascading Chain](https://docs.google.com/document/d/1Or8-8Zq2AO6qaRqMq0dUb-5LaGF5SNf3tZyiSNfF-x4/edit) -->
 
 ## Ghost algorithm 
 The GHOST (Greedy Heaviest Observed SubTree) protocol is used by Minima nodes to come to consensus on which chain is the valid one when multiple branches are established. Branching occurs naturally when two blocks with the same number (block height) are found simultaneously. 
