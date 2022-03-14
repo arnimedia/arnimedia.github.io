@@ -45,4 +45,6 @@ GHOST was originally proposed as an alternative to Longest Chain by Sompolinsky 
 
 Diagram illustrating the the main chain according to GHOST:
 
-![Minima](/img/learn/learn_7.png)
+![Minima](/img/learn/The Blockchain-01.svg#gh-light-mode-only)![Minima](/img/learn/The Blockchain-02.svg#gh-dark-mode-only)
+
+**A block tree in which the longest chain and the chain selected by GHOST differ. An attacker's chain is able to switch the longest chain, but not the one selected by GHOST.**
