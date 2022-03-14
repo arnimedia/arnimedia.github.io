@@ -50,13 +50,13 @@ Used for a burn transaction. The linkhash of a burn transaction is the transacti
 Diagram: Main transaction structure
 
 | Transaction ID: Hash(Transaction object) |
-| :-----------------------------------------:|
+| :-----------------------------------------|
 | Inputs <br /> Outputs<br />State Variables (0-255)<br />Linkhash (0x00) |
 
 Diagram: Burn transaction structure
 
 | Transaction ID: Hash(Transaction object) |
-| :----------------------------------------: |
+| :---------------------------------------- |
 | Inputs (matching the main txn)<br />Output (amount to burn)<br />State Variables (matching the main txn)<br />Linkhash (main txn ID) |
 
 

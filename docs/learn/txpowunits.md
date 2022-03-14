@@ -25,27 +25,11 @@ When the node has checked that a TxPoW unit is valid, it will process it, adding
 Diagram: The structure of a TxPoW Unit
 
 | TxPoW ID |
-| ------------ |
+| :------------ |
 | **Header** |
-| Nonce (nonce) | 
-| TimeMilli (timemilli) | 
-| Block Number (block) | 
-| Block Difficulty (blkdiff) | 
-| Cascade Levels (cascadelevels) | 
-| Parent Blocks  (superparents) | 
-| MMR Root (mmr) | 
-| MMR Total (total) | 
-| Magic (magic) | 
-| Body Hash (txbodyhash) | 
-| ------------------|
+| Nonce (nonce)<br />TimeMilli (timemilli)<br />Block Number (block)<br />Block Difficulty (blkdiff)<br />Cascade Levels (cascadelevels)<br />Parent Blocks  (superparents)<br />MMR Root (mmr)<br />MMR Total (total)<br />Magic (magic)<br />Body Hash (txbodyhash) | 
 | **Body** |
-| Random Number (prng) |
-| Txn Difficulty (txndiff) |
-| A Transaction (txn) |
-| A Witness (witness) |
-| Burn Txn (burntxn) |
-| Burn Witness (burnwitness) |
-| Txn List (txnlist) |
+| Random Number (prng)<br />Txn Difficulty (txndiff)<br />A Transaction (txn)<br />A Witness (witness)<br />Burn Txn (burntxn)<br />Burn Witness (burnwitness)<br />Txn List (txnlist) |
 
 
 ## Header
