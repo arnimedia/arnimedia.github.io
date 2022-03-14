@@ -13,9 +13,9 @@ A script can run for 512 instructions. An instruction is 1 operation or function
 The process to create a basic Smart Contract is as follows:
 
 1. Write a script that will return TRUE when the funds should be spendable
-2. Create the script, determining the address of the script. The address is the hash of the script. 
+2. Create the script, determining the **address** of the script. The address is the hash of the script. 
 3. Send funds to the script address and set the state variables, this will lock the funds in a coin.
-4. Add the coin as an input to a transaction. A transaction in Minima is a set of input coins, a set of output coins and a state variable list from 0-255. Each ‘coin’ has an amount, address (script hash), tokenid and coinid. 
+4. Add the coin as an input to a transaction. A transaction in Minima is a set of input coins, a set of output coins and a state variable list from 0-255. Each ‘coin’ has an *amount, address (script hash), tokenid and coinid*. 
 5. The transaction will only be valid when the script in the input coin returns TRUE, at which point the amount in the coin can be spent - in full.
 
 A ‘contract’ is the script that locks the funds in a coin and is interchangeable with the word script.
