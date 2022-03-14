@@ -24,12 +24,12 @@ alternatively go to https://incentive.minima.global/
 3. If you have previously registered, please reset your password using the Forgot Password button. Please check your junk email. You can set your new password to be the same as your old one. Then login.
 
 
-![Login](/img/runanode/android_1.png)
+![Login](/img/runanode/android_1.png#width50)
 
 4. If you registered after 6th December 2021, simply login.
 5. Once logged in, copy your **Node ID**
 
-![Node ID](/img/runanode/android_2.png)
+![Node ID](/img/runanode/android_2.png#width50)
 
 6. In the app, Paste your Incentive ID and Click **Update**
 
@@ -44,8 +44,8 @@ You will see your new Rewards balance updated.
 
 You can also check your balance from the Console. Swipe across to the Console and type incentivecash then Enter. 
 
-![Console](/img/runanode/android_3.png)
-![Console](/img/runanode/android_4.png)
+![Console](/img/runanode/android_3.png#width50)
+![Console](/img/runanode/android_4.png#width50)
 
 **Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 
