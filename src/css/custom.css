@@ -17,6 +17,8 @@
   --ifm-heading-font-family: 'Manrope', sans-serif;
   --ifm-font-family-base: 'Manrope', sans-serif;
   --ifm-heading-font-weight: 800;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 1.7rem;
 
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
