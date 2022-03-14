@@ -20,10 +20,10 @@ Before a node can propagate its TxPoW unit to the network, it must mine the TxPo
 The transaction difficulty sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work).This ensures the network has received the transactions in their TxPoW unit, however this does not automatically mean that their transactions are in a block. 
 TxPoW units only become blocks if, by chance, the block difficulty is met in the process of meeting the transaction difficulty. 
 
-## Check 
+#### Check 
 When a node receives a TxPoW unit from another node on the network, it must check it to ensure its validity before processing and forwarding it on to its peers.
 
-## Process
+#### Process
 When the node has checked that a TxPoW unit is valid, it will process it, adding to the chain if it meets the required difficulty level to become a block.
 
 Diagram: The structure of a TxPoW Unit
