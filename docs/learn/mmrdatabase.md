@@ -21,8 +21,7 @@ When a user wishes to spend their coins, they must prove their coins are unspent
 A node receiving the proofs will check the coins are valid by summing the hashes provided and ensuring it matches the Merkle root they possess themselves.
 Diagram: A complete Merkle Mountain Range (MMR) with three peaks and root
 
-![Minima](/img/learn/learn_6.png)
 ![Minima](/img/learn/mMRDatabaseLm.svg#gh-light-mode-only)![Minima](/img/learn/mMRDatabaseDm.svg#gh-dark-mode-only)
 
-A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
-Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
+- A brief overview: https://github.com/opentimestamps/opentimestamps-server/blob/master/doc/merkle-mountain-range.md
+- Detailed overview: https://petertodd.org/2016/delayed-txo-commitments
