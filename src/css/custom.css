@@ -66,6 +66,14 @@
   width: 80%;
 }
 
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
 /* Header */
 .navbar__logo {
   margin-left: 0.5rem;
