@@ -1,11 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Jon MacDonald
 Chief Marketing Officer
 
-[Image Download](#) | [Twitter](https://twitter.com/jmacdonald) | [LinkedIn](https://www.linkedin.com/in/jonathanmacdonald/) | [Website](https://jonathanmacdonald.com)
+![Jon MacDonald](/img/poeple/Jon.png)
+
+[Image Download](/img/poeple/Jon.png) | [Twitter](https://twitter.com/jmacdonald) | [LinkedIn](https://www.linkedin.com/in/jonathanmacdonald/) | [Website](https://jonathanmacdonald.com)
  
 Jon MacDonald is an award-winning, bestselling author and one of the most in-demand experts in the world on the topics of change, digital transformation, mindset, innovation, strategy and the future. Part of the original cryptography groups prior to Bitcoin, Jonathan is a thought-leader in the blockchain space. He is completely media trained and has many years of TV/Radio experience.
  
