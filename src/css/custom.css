@@ -52,6 +52,16 @@
   --ifm-input-text-color: #FFFFFF;
 }
 
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
+
+.row .col, img {
+  max-width: 100%;
+  width: 80%;
+}
+
 /* Header */
 .navbar__logo {
   margin-left: 0.5rem;

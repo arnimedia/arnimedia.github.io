@@ -12,7 +12,7 @@ On-chain
 
 Minima is a censorship resistant value transfer layer. All transactions are processed by all nodes on the network. It is flood-fill. It uses a P2P system as its backbone for communication between nodes.
 
-![Minima](/img/learn/learn_1.png)
+![Minima](/img/network/minimaLayer1Lm.svg#gh-light-mode-only)![Minima](/img/network/minimaLayer1Dm.svg#gh-dark-mode-only)
 
 The Minima blockchain is where all on-chain transactions are processed. Every node in the network collectively comes to consensus on the state of the blockchain so all transactions are accounted for.
 Users initiate their transacting relationships on Layer 1, prior to moving off-chain to use Layer 2 for faster and cheaper transactions. As the trust layer of the protocol, Layer 1 is also used for settling any disputes between users on Layer 2.
