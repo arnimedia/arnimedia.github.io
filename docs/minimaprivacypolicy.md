@@ -11,20 +11,20 @@ It sets out what information we collect about you, what we use it for and whom w
 
 We may sometimes need to update this notice, to reflect any changes to the way the Services are provided or to comply with new legal requirements. We will notify you of any important changes before they take effect.
 
-1. ## Who we are and other important information
+## Who we are and other important information
 
 We are Minima Global Ltd, a company registered in United Kingdom with company number 11748734 whose registered address is 15 Westferry Circus, London E14 4HD, UK (we / us / our).
 
 For all visitors to our Website and those who use our Services, we are the controller of your information (which means we decide what information we collect and how it is used). We are registered with the Information Commissioner’s Office (ICO), the UK regulator for data protection matters, under number ZB112662
 
-2. ## Contact details
+## Contact details
 
 If you have any questions about this privacy notice or the way that we use information, please get in touch using the following details:
 
 - Email address: info@minima.global
 - Postal address: 15 Westferry Circus, London E14 4HD, UK
 
-3. ## The information we collect about you
+## The information we collect about you
 
 Personal data means any information which does (or could be used to) identify a living person. We have grouped together the types of personal data that we collect from you below:
 
@@ -35,7 +35,7 @@ Personal data means any information which does (or could be used to) identify a 
 - Technical and Usage Data - information about your visit to our Website and internet protocol (IP) address, browser type and version, browser plug-in types and versions, operating system and platform on the devices you use to access our Website
 - Marketing Data – information you submit to confirm whether you wish to receive marketing from us and which method you prefer to be contacted by (e.g. text, email)
 
-4. ## How we use your information
+## How we use your information
 
 We are required to identify a legal justification (also known as a lawful basis) for collecting and using your personal data. There are six legal justifications that organisations can rely on. The most relevant of these to us are where we use your personal data to:
 
@@ -82,7 +82,7 @@ Justification: Legal obligation (necessary to comply with our obligations under 
 
 We may anonymise the personal data we collect (so it can no longer identify you) and then combine it with other anonymous information so it becomes aggregated data. Aggregated data helps us identify trends (e.g. what percentage of users responded to a specific survey). Data protection law does not govern the use of aggregated data and the various rights described below do not apply to it.
 
-5. ## Who we share your information with
+## Who we share your information with
 
 We share (or may share) your personal data with:
 
@@ -93,13 +93,13 @@ We share (or may share) your personal data with:
 
 If we were asked to provide personal data in response to a court order or legal request (e.g. from the police), we would seek legal advice before disclosing any information and carefully consider the impact on your rights when providing a response.
 
-6. ## Where your information is located or transferred to
+## Where your information is located or transferred to
 
 We will only transfer information outside of the UK where we have a valid legal mechanism in place (to make sure that your personal data is guaranteed a level of protection, regardless of where in the world it is located, e.g. by using contracts approved by the European Commission or UK Secretary of State).
 
 If you access our Website or purchase our Services whilst abroad then your personal data may be stored on servers located in the same country as you or your organisation.
 
-7. ## How we keep your information safe
+## How we keep your information safe
 
 We have implemented security measures to prevent your personal data from being accidentally or illegally lost, used or accessed by those who do not have permission. These measures include:
 
@@ -113,7 +113,7 @@ We have implemented security measures to prevent your personal data from being a
 If there is an incident that has affected your personal data and we are the controller, we will notify the regulator and keep you informed (where required under data protection law). Where we act as the processor for the affected personal data, we notify the controller and support them with investigating and responding to the incident.
 If you notice any unusual activity on the Website, please contact us at info@minima.global.
 
-8. ## How long we keep your information
+## How long we keep your information
 
 Where we act as the controller, we will only retain your personal data for as long as necessary to fulfil the purposes we collected it for.
 
@@ -125,7 +125,7 @@ If you browse our Website, we keep personal data collected through our analytics
 
 If you have asked for information from us or you have subscribed to our mailing list, we keep your details until you ask us to stop contacting you.
 
-9. ## Your legal rights
+## Your legal rights
 
 You have specific legal rights in relation to your personal data.
 
@@ -150,7 +150,7 @@ If you wish to make any of the right requests listed below, you can reach us at 
 
 **Complaints:** If you are unhappy with the way we collect and use your personal data, you can complain to the ICO or another relevant supervisory body, but we hope that we can respond to your concerns before it reaches that stage. Please contact us at info@minima.global.
 
-10. ## Our cookie policy
+## Our cookie policy
 
 We use cookies and similar technologies on our Website. Cookies are small text files that are downloaded to your device. Cookies contain uniquely generated references that are used to distinguish you from other users. They allow information gathered on one webpage to be stored until it is needed for use on another, allowing a website to provide you with a personalised experience and provide website owners with statistics about how you interact with their websites.
 
