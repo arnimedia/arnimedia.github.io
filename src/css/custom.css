@@ -17,8 +17,8 @@
   --ifm-heading-font-family: 'Manrope', sans-serif;
   --ifm-font-family-base: 'Manrope', sans-serif;
   --ifm-heading-font-weight: 800;
-  --ifm-h1-font-size: 2.5rem;
-  --ifm-h2-font-size: 1.7rem;
+  --ifm-h1-font-size: 2.5rem !important;
+  --ifm-h2-font-size: 1.7rem !important;
 
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
@@ -47,6 +47,8 @@
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
   --ifm-hero-background-min-color: #16181C;
+  --ifm-h1-font-size: 2.5rem !important;
+  --ifm-h2-font-size: 1.7rem !important;
 
 /* Card */
   --ifm-card-background-color: #25272B;
