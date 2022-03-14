@@ -32,7 +32,22 @@ i.e. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
 If any of the above happen, your Minima node will stop running and you will need to repeat step 3 to start it again.
 
 Minima is now started, your output should look like the below: 
-![Windows](/img/runanode/windows_1.png)
+```
+C:\Users\username\Desktop>java -Xmx1G -jar minima.jar -rpcenable
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  __  __  ____  _  _  ____  __  __    __    *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (  \/  )(_  _)( \( )(_  _)(  \/  )  /__\   *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *  )    (  _)(_  )  (  _)(_  )    (  /(__)\  *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : * (_/\/\_)(____)(_)\_)(____)(_/\/\_)(__)(__) *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : *                                            *
+Minima @ 14/03/2022 17:32:30 [5.1 MB] : **********************************************
+Minima @ 14/03/2022 17:32:30 [6.4 MB] : Welcome to Minima v0.100.32 - for assistance type help. Then press enter.
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\userprefs.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\cascade.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\chaintree.db
+Minima @ 14/03/2022 17:32:31 [28.8 MB] : Load Object file does not exist : C:\Users\username\Desktop\testconfig\databases\p2p.db
+Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002 
+```
 ----
 
 How to set up Incentive Program to receive rewards
@@ -51,7 +66,7 @@ Example:
 incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any)!
 
-[Windows](/img/runanode/windows_2.png)
+![Windows](/img/runanode/windows_2.png)
 **Your Incentive Program account is now connected to your node!**
 
 
@@ -64,7 +79,26 @@ Last Ping: : This is the last date and time your node sent a PING message. For e
 4. For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
 
 5. To check your rewards, type IncentiveCash into the Command Line. 
-![Windows](/img/runanode/windows_3.png)
+```
+incentivecash
+{
+  "command":"incentivecash",
+  "status":true,
+  "response":{
+    "uid":"731ae11b-b602-4dea-8564-7cb4edbe07b7",
+    "details":{
+      "lastPing":"2022-03-14T17:28:38.709Z",
+      "inviteCode":"BAEPAAD0",
+      "rewards":{
+        "dailyRewards":60,
+        "previousRewards":100.0,
+        "communityRewards":50.0,
+        "inviterRewards":10.0
+      }
+    }
+  }
+}
+```
 
 **Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 

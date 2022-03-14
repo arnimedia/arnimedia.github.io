@@ -79,7 +79,26 @@ This is the last date and time your node sent a PING message. For every day your
 3. Your node will then ping us so we know it's running. 
 
 4. For every day your node pings us, we'll add 1 Minima to your DAILY REWARDS. 
-![Linux](/img/runanode/linux_2.png)
+```
+incentivecash
+{
+  "command":"incentivecash",
+  "status":true,
+  "response":{
+    "uid":"731ae11b-b602-4dea-8564-7cb4edbe07b7",
+    "details":{
+      "lastPing":"2022-03-14T17:28:38.709Z",
+      "inviteCode":"BAEPAAD0",
+      "rewards":{
+        "dailyRewards":60,
+        "previousRewards":100.0,
+        "communityRewards":50.0,
+        "inviterRewards":10.0
+      }
+    }
+  }
+}
+```
 
 :::tip Note
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
