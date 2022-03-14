@@ -5,7 +5,7 @@ sidebar_position: 3
 # Jon MacDonald
 Chief Marketing Officer
 
-![Jon MacDonald](/img/people/Jon.jpg)
+![Jon MacDonald](/img/people/Jon.jpg#width50)
 
 [Image Download](/img/people/Jon.jpg) | [Twitter](https://twitter.com/jmacdonald) | [LinkedIn](https://www.linkedin.com/in/jonathanmacdonald/) | [Website](https://jonathanmacdonald.com)
  

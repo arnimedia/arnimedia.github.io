@@ -5,7 +5,7 @@ sidebar_position: 2
 # Hugo Feiler
 Co-Founder & Chief Executive Officer
  
-![Hugo Feiler](/img/people/Hugo.png)
+![Hugo Feiler](/img/people/Hugo.png#width50)
  
 [Image Download](/img/people/Hugo.png) | [Twitter](https://twitter.com/HugoFeiler) | [LinkedIn](https://www.linkedin.com/in/hugo-feiler-b7529b4)
  

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Paddy Cerri
 Co-Founder & Chief Blockchain Architect 
  
-![Paddy Cerri](/img/people/Paddy.png)
+![Paddy Cerri](/img/people/Paddy.png#width50)
  
 [Image Download](/img/people/Paddy.png) | [Twitter](https://twitter.com/Spartacuswrecks) 
  
