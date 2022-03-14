@@ -22,7 +22,7 @@ Minima supports custom tokens (including NFTs) natively. Tokens are **Coloured c
 
 Custom tokens are specified by the following characteristics:
 
-| | |
+| Attribute | Description |
 |---|----|
 | TokenID | Created after all the details are set, by hashing the coinid and total amount. Each TokenID is globally unique |
 | Token Name/Description | A String description that can be just a name or a full JSON. |
