@@ -13,25 +13,26 @@ The TxPoW tree is the main blockchain, a chain of the most recent TxPoW units th
 The Cascading chain is an unbroken chain of the headers of so called ‘super blocks’, designed to record and prove, in an immutable way, the total cumulative Proof-of-Work input into the network without having to keep a record of all individual blocks. Blocks are added to the Cascading chain on a periodic basis.
 
 ## TxPoW Tree
-The **TxPoW tree** is the main blockchain and has a root - the start of the chain, tip - end of the chain, blocks (nodes) and length (number of blocks).
+The **TxPoW tree** is the main blockchain and has a **root** - the start of the chain, **tip** - end of the chain, **blocks** (nodes) and **length** (number of blocks).
 The root of the chain meets the tip of the Cascade.
 
-If a TxPoW unit becomes a block, it will have a static **base weight** equal to its difficulty and a total weight equal to its base weight plus the sum of the weights of its children. 
+If a TxPoW unit becomes a block, it will have a static **base weight** equal to its difficulty and a **total weight** equal to its base weight plus the sum of the weights of its children. 
 
-**Weights**
 - **Base weight** = Difficulty (i.e. number of hashes it took to mine the block)
 - **Total weight** = Base weight + Sum(Base weight of all children) 
-
 
 By default, all blocks in the chain are Level 0 blocks.
 
 Branching in the tree can occur if multiple blocks with the same height (block number) are found simultaneously. Branching is a natural occurrence and will resolve over time as a heavier branch continues to be built on.
 
 All blocks in the tree are stored in a fast link hash table which provides a quick method of searching for blocks and determining how many blocks are in the tree, where for each block:
+
 Key (K) - TxPoW ID 
+
 Value (V) - TxPoW object
 
 ## The Cascading Chain
+[The Cascading Chain](https://docs.google.com/document/d/1Or8-8Zq2AO6qaRqMq0dUb-5LaGF5SNf3tZyiSNfF-x4/edit)
 
 ## Ghost algorithm 
 The GHOST (Greedy Heaviest Observed SubTree) protocol is used by Minima nodes to come to consensus on which chain is the valid one when multiple branches are established. Branching occurs naturally when two blocks with the same number (block height) are found simultaneously. 
