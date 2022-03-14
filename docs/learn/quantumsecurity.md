@@ -18,7 +18,7 @@ The cost of being Quantum secure is that signatures are at least 10-20x as big a
 
 ## Coloured coins
 Minima is the native coin for the Minima blockchain. Each UTxO is defined as a coin and therefore a coin can be worth any amount of Minima. 
-Minima supports custom tokens (including NFTs) natively. Tokens are Coloured coins. Coloured coins are tiny fractions of Minima which represent the supply of a custom token or NFT.
+Minima supports custom tokens (including NFTs) natively. Tokens are **Coloured coins**. Coloured coins are tiny fractions of Minima which represent the supply of a custom token or NFT.
 
 Custom tokens are specified by the following characteristics:
 
