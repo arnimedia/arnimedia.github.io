@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Learn',
-    link: 'docs/vision',
+    link: 'docs/about/vision',
     description: (
       <>
         An in-depth introduction to the Minima protocol and it’s architecture.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Run a node',
-    link: 'runanode/get_started_in_3_steps',
+    link: 'docs/runanode/get_started_in_3_steps',
     description: (
       <>
         Learn how to install and run a validating and constructing Minima node on your device.
@@ -41,7 +41,7 @@ const FeatureList = [
   },
   {
     title: 'Ambassador',
-    link: 'docs/vision',
+    link: '/docs/runanode/get_started_in_3_steps',
     description: (
       <>
         Learn how to become a Minima ambassador and what Rewards you could earn
