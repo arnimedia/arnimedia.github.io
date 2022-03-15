@@ -35,8 +35,12 @@ i.e. sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable -clean
 - Turning your desktop off
 
 If any of the above happen, your Minima node will stop running and you will need to repeat step 3 to start it again. 
-![Linux](/img/runanode/linux_1.png)
+``` 
+C:\Users\username>ssh pi@192.168.0.24
+pi@192.168.0.24's password:
 
+pi@raspberrypi:~ $ sudo java -Xmx1G -jar /home/pi/minima.jar -rpcenable
+``` 
 ## How to set up your Incentive Program account to receive rewards
 
 1. Go to https://incentive.minima.global/ - 
