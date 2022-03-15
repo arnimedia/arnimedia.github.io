@@ -8,8 +8,6 @@ sidebar_position: 2
 How to install Minima on your Android device: https://youtu.be/aaPXlYTWCTg
 How to connect your Incentive account to your Android node: https://youtu.be/Xm3caii73d8
 
-**
-
 ## How to download and Install Minima on your Android device
 
 1. Uninstall any previous versions of the Minima App 
