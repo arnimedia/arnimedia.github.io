@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Minima Terms and Conditions
+# Minima T&Cs
 
 These terms and conditions (“Terms and Conditions”) outline the rules and regulations for the use of Minima GmbH’s website, located at https://minima.global/ (“Website”).
 
