@@ -37,12 +37,16 @@ ___
 
 1. Go to https://incentive.minima.global/ - 
 
-**Previous users:** If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.) 
+:::info Previous users
+If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.) 
 You can set your new password to be the same as your old one. 
 https://incentive.minima.global/account/forgot-password
 Please check your junk mail for the reset password email.
+:::
 
-**New users:** After you have registered, simply login to your account
+:::info New users
+After you have registered, simply login to your account
+:::
 
 2. Once the Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the command line: 
 
