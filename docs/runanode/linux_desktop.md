@@ -46,7 +46,7 @@ pi@raspberrypi:~ $ sudo java -Xmx1G -jar /home/pi/minima.jar -rpcenable
 ``` 
 ## How to set up your Incentive Program account to receive rewards
 
-1. Go to https://incentive.minima.global/ - 
+1. Go to https://incentive.minima.global/  
 
 :::info Previous users
 If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
