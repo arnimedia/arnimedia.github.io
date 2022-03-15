@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## How to download and Install Minima on your Linux Desktop 
 
-:::tip Note
+:::note Note
 If you are using Debian OS (including Ubuntu) please follow the instructions on the get-started-linux-server channel.
 :::
 
@@ -22,7 +22,7 @@ sudo java -Xmx1G -jar (including a space after -jar)
 The output should look like the below:
 sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable
 
-:::tip Note
+:::note Note
 When starting a new node or to delete your existing node data -clean can be added on to the end. Do not use -clean if you are simply restarting your node.
 i.e. sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable -clean
 :::
@@ -45,14 +45,14 @@ pi@raspberrypi:~ $ sudo java -Xmx1G -jar /home/pi/minima.jar -rpcenable
 
 1. Go to https://incentive.minima.global/ - 
 
-:::tip Previous users
+:::info Previous users
 If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
 You can set your new password to be the same as your old one. 
 https://incentive.minima.global/account/forgot-password
 Please check your junk mail for the reset password email.
 :::
 
-:::tip New users
+:::info New users
 After you have registered, simply login to your account
 :::
 
@@ -103,7 +103,7 @@ incentivecash
 }
 ```
 
-:::tip Note
+:::note Note
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 

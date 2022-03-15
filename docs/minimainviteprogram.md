@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Minima Invite Program
+# Invite Program
 
 ## What is the Minima Invite Program?
 The Minima Invite Program is designed to reward all Minima node runners that are registered with the Incentive Reward Program, for sharing us with your networks, encouraging your contacts to install and run a node and join the Minima Incentive Reward Program.

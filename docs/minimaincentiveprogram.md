@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Minima Incentive Program
+# Incentive Program
 
 ## What is the Minima Incentive Program?
 The Incentive Program is designed to reward you for installing and running a Minima node.
@@ -44,5 +44,5 @@ The best way to learn more and ask questions is to join our community channels b
 - [Discord](https://discord.gg/ZQaUXPape5)
 - [Telegram](https://t.me/Minima_Global) 
 
-For the full Terms & Conditions, please [click here](https://minima.global/incentivecash-program-terms-and-conditions).
+For the full Terms & Conditions, please [click here](docs/incentiveprogramtermsandconditions/applicationoftheseterms).
 

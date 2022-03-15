@@ -4,19 +4,20 @@ sidebar_position: 4
 
 # TxPoW Units (Blocks)
 
-Before a transaction can be posted to the network, it must be added to a **TxPoW** unit with other essential data and ‘mined’.
+Before a transaction can be posted to the network, it must be added to a **TxPoW unit** with other essential data and ‘mined’.
 During the TxPoW creation process, in addition to the main transaction, unconfirmed transactions in the mempool will also be added to the body of the TxPoW unit, serving to further propagate mempool transactions to known peers.
 
 After being mined, a TxPoW unit will be propagated to the network either as a block if it meets the network block difficulty level, or as a basic TxPoW unit which serves only to propagate known unconfirmed transactions. This ensures block creation is a ‘chance’ encounter.
 
 A node can carry out several activities with a TxPoW unit depending on the situation:
 ### Generate
-When a user wishes to send a transaction, or is required to send a Pulse to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the mempool. TxPoW units are analogous to compact blocks in Bitcoin. See TxPoW Generation
+When a user wishes to send a transaction, or is required to send a **Pulse** to the network, their node will generate (construct) a TxPoW unit containing their transaction and the hashes of other unconfirmed transactions it knows about in the **mempool**. TxPoW units are analogous to compact blocks in Bitcoin.
 ### Mine 
-Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different nonces (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~10 seconds work), they can propagate their TxPoW unit to other nodes in the network. 
+Before a node can propagate its TxPoW unit to the network, it must mine the TxPoW unit by cycling through different **nonces** (numbers), adding the nonce to the TxPoW header and hashing the result. Once the resulting hash meets the level of difficulty required by the network (~10 seconds work), they can propagate their TxPoW unit to other nodes in the network. 
 
-**Note:** The transaction difficulty sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work).This ensures the network has received the transactions in their TxPoW unit, however this does not automatically mean that their transactions are in a block. 
-TxPoW units only become blocks if, by chance, the block difficulty is met in the process of meeting the transaction difficulty. 
+blue box
+**Note:** The **transaction difficulty** sets the minimum amount of work a node must provide before their TxPoW can be propagated across the network (~10 seconds work).This ensures the network has received the transactions in their TxPoW unit, **however this does not automatically mean that their transactions are in a block.** 
+TxPoW units only become blocks if, by chance, the **block difficulty** is met in the process of meeting the transaction difficulty. 
 ### Check 
 When a node receives a TxPoW unit from another node on the network, it must check it to ensure its validity before processing and forwarding it on to its peers.
 ### Process

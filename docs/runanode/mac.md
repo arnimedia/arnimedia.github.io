@@ -44,7 +44,9 @@ Congratulations - your node is now installed & running! The last step is to conn
 
 ## How to set up your Incentive Program account to receive rewards
 
-:::tip Previous users
+Attention icon in blue box below
+
+:::info Previous users
 If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
 You can set your new password to be the same as your old one. 
 https://incentive.minima.global/account/forgot-password
@@ -53,7 +55,7 @@ Once logged in, copy your Node ID.
 :::
 
 
-:::tip New users
+:::info New users
 After you have registered and once Minima is running, login to your Incentive Account at https://incentive.minima.global/ and copy your Node ID.
 
 Then run the following common in your Terminal, replacing xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx with the copied Node ID:
@@ -67,6 +69,8 @@ To see your rewards, type:
 ```
 mcli incentivecash
 ```
+
+Info icon in blue box below
 
 :::tip Current rewards
 This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
@@ -100,7 +104,7 @@ incentivecash
 }
 ```
 
-:::tip Note
+:::note Note
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 

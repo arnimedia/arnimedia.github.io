@@ -47,6 +47,8 @@ You can also check your balance from the Console. Swipe across to the Console an
 ![Console](/img/runanode/android_3.png#width50)
 ![Console](/img/runanode/android_4.png#width50)
 
-**Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+:::note Note
+There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+:::
 
 

@@ -99,7 +99,7 @@ incentivecash
 }
 ```
 
-:::tip Note 
+:::note Note 
 There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
 :::
 

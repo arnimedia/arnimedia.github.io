@@ -11,16 +11,20 @@ If you have not run Minima before, please ensure you have the latest version of 
 1. If you have a previous version of Minima running, type quit into the Command prompt window, then replace your existing minima.jar file with the latest version.
 2. Download and save the latest Minima JAR using the button below (https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 3. Open the Command Prompt as Admin. When it opens, type the following:
-
+```
 java -Xmx1G -jar (including a space after -jar) 
+```
 - then drag and drop the minima.jar file into the command window, 
 - then add a space and type 
--rpcenable 
+- rpcenable 
 The output should look like the below (all on one line):
+```
 java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable
-
-Note: When starting a new node or to delete your existing node data -clean can be added on to the end. Do not use -clean if you are simply restarting your node.
+```
+:::note Note
+When starting a new node or to delete your existing node data -clean can be added on to the end. Do not use -clean if you are simply restarting your node.
 i.e. java -Xmx1G -jar C:\Users\YourName\minima.jar -rpcenable -clean
+:::
 
 4. Hit the Enter key
 
@@ -53,17 +57,19 @@ Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002
 ## How to set up Incentive Program to receive rewards
 1. Go to https://incentive.minima.global/ - 
 
-Previous users: If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
+**Previous users:** If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
 You can set your new password to be the same as your old one. 
 https://incentive.minima.global/account/forgot-password
 Please check your junk mail for the reset password email.
 
-New users: After you have registered, simply login to your account
+**New users:** After you have registered, simply login to your account
 
-2. Once the Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the Terminal command line: 
+2. Once Minima is running, connect your Incentive Program account to your node by copying YOUR OWN Node ID from the Incentive Program website above and typing the following directly into the Terminal command line: 
+```
 incentivecash uid: InsertYourNodeID
 Example:
 incentivecash uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
+```
 You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any)!
 ```
 incentivecash uid:731ae11b-b602-4dea-8564-7cb4edbe07b7
@@ -89,8 +95,6 @@ incentivecash uid:731ae11b-b602-4dea-8564-7cb4edbe07b7
 }
 ```
 **Your Incentive Program account is now connected to your node!**
-
-
 
 **Current rewards:** This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
 Last Ping: : This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards.
@@ -121,6 +125,8 @@ incentivecash
 }
 ```
 
-**Note:** There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+:::note Note
+There will temporarily be no MiniHub or MiniDapps - based on community feedback we are working hard to improve the MiniDapp system for a future release! 
+:::
 
 
