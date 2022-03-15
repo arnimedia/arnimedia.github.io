@@ -11,6 +11,7 @@ The majority of public allocation will be made available through our series of c
 Our ecosystem benefits from the stability and trust that comes with the reassurance that there are no risks around hard-forking, opinion battles or financially motivated strategies, all of which together offer the ultimate footing for scaling rapidly. Minima is a positively interdependent network, where Users cooperate in a win-win scenario. What is good for one user is good for another, and more users means more decentralization, and more security.
 
 Users of Minima can rely on Layer 1 performance and security guarantees of a well formed, available, equally represented and fully decentralized, censorship and quantum resistant system.
+![Minima](/img/token/tokenDistributionCharts1Lm.svg#gh-light-mode-only)![Minima](/img/token/tokenDistributionCharts1Dm.svg#gh-dark-mode-only)
 
 ## Public Allocation
 
@@ -34,6 +35,7 @@ The remaining 35% of public allocation is reserved for community circulation thr
 In the event that we experience greater than expected organic growth resulting in us reaching our target minimum node runner goal with allocations in-hand, any remaining tokens will be added to and distributed through our public sale channels. 
 
 We are running a range of incentive initiatives for our community. Our approach is multi-facetted aimed at reaching our goal of a secure, decentralized, censorship resistant protocol, and an active, engaged ecosystem. 
+![Minima](/img/token/tokenDistributionCharts2Lm.svg#gh-light-mode-only)![Minima](/img/token/tokenDistributionCharts2Dm.svg#gh-dark-mode-only)
 
 ## Incentive Program 
 
