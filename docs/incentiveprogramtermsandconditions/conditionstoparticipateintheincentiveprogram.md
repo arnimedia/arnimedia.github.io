@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-#Conditions to participate in the Incentive Program
+# Conditions to participate in the Incentive Program
 
 To participate in the Incentive Program, you agree that:
 

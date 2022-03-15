@@ -17,8 +17,6 @@
   --ifm-heading-font-family: 'Manrope', sans-serif;
   --ifm-font-family-base: 'Manrope', sans-serif;
   --ifm-heading-font-weight: 800;
-  --ifm-h1-font-size: 2.5rem !important;
-  --ifm-h2-font-size: 1.7rem !important;
 
 /* Header intro background */
   --ifm-hero-background-min-color: #FFFFFF;
@@ -36,6 +34,11 @@
   --ifm-input-border-color: #BDBDC4;
   --ifm-input-cancel-color: #FFFFFF;
   --ifm-input-text-color: var(--ifm-navbar-link-color);
+
+/* Boxes */
+  --ifm-input-minima-border-color: #5A94FF;
+  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.1);
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -47,13 +50,20 @@
   --ifm-heading-color: #ffffff;
   --ifm-hero-text-color: #ffffff;
   --ifm-hero-background-min-color: #16181C;
-  --ifm-h1-font-size: 2.5rem !important;
-  --ifm-h2-font-size: 1.7rem !important;
 
 /* Card */
   --ifm-card-background-color: #25272B;
   --aa-muted-color-rgb: rgb(255, 255, 256) !important;
   --ifm-input-text-color: #FFFFFF;
+
+/* Boxes */
+  --ifm-input-minima-bacground-color: rgba(90, 148, 255, 0.4);
+}
+
+/* Boxes */
+.alert {
+  background-color: var(--ifm-input-minima-bacground-color);
+  border-color: var(--ifm-input-minima-border-color);
 }
 
 [data-theme='light'] img[src$='#gh-dark-mode-only'],

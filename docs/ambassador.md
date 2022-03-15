@@ -36,7 +36,7 @@ The process you need to follow is:
 2. Give this link to your friend
 3. When they join the server, they must run this command **rank!m @yourDiscordTag set inviter**. Each person can only run the command once, but there is no limit on the number of times you can be set as the inviter.
 
-![Ambassador](/img/ambassador/ambassador_1.png)
+![Ambassador](/img/ambassador/ambassador_1.png#width50)
 
 
 ## What are the XP Levels and Ambassador Ranks?
