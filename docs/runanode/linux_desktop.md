@@ -71,7 +71,7 @@ curl 127.0.0.1:9002/incentivecash+uid:00F3E50D-5A52-444B-8F1A-0DA72D6CAA84
 ```
 
 You should receive a return status of true and see your previous reward balance (if any) including missed rewards (if any).
-Your Incentive Program account is now connected to your node!🥳 
+Your Incentive Program account is now connected to your node!
 
 :::tip Current rewards
 This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
