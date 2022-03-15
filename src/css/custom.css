@@ -221,6 +221,23 @@ article{
   margin-right: 1rem;
 }
 
-.footer__links :first-child {
-  width: 70%;
+/* Mobile adjustment */
+
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 996px) {
+  .main-wrapper .hero{
+    padding: 2rem 0 0 0;
+  }
+  .hero .hero__title {
+    font-size: 2rem;
+  }
+  .footer__links {
+    text-align: center;
+  }
+  .footer__bottom{
+    text-align: center;
+  }
+  .menu__list-item a span svg{
+    display: none;
+  }
 }
