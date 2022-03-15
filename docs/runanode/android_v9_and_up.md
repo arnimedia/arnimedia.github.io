@@ -36,11 +36,13 @@ alternatively go to https://incentive.minima.global/
 You will see your new Rewards balance updated. 
 **Your Incentive Program account is now connected to your node!**
 
+:::tip Current rewards
+This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
+:::
 
-
-**Current rewards:** This is the total of old and new rewards. It includes any reward collections you previously missed that were paid to you at the Hard Fork.
-
-**Last Ping:** This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards. 
+:::tip Last Ping
+This is the last date and time your node sent a PING message. For every day your node pings us, we'll add 1 Minima to your rewards. 
+:::
 
 You can also check your balance from the Console. Swipe across to the Console and type incentivecash then Enter. 
 
