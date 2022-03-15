@@ -8,7 +8,10 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: var(--ifm-hero-background-min-color);
+  background-color: transparent;
+}
+.hero{
+  background-color: transparent;
 }
 
 @media screen and (max-width: 996px) {
