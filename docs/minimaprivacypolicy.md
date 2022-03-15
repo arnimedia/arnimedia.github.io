@@ -46,39 +46,26 @@ We are required to identify a legal justification (also known as a lawful basis)
 
 The list below sets out the lawful basis we rely on when we use your personal data. If we intend to use your personal data for a new reason that is not stated in the list, we will update our privacy notice.
 
-:::note Purpose
-Providing our Services to you
-Justification: Contract (you accept our Terms and Conditions)
-:::
+**Purpose:** Providing our Services to you<br />
+**Justification:** Contract (you accept our Terms and Conditions)
 
-:::note Purpose
-Asking you to provide feedback about our Website and Services
-Justification: Consent (the feedback is always optional)
-:::
+**Purpose:** Asking you to provide feedback about our Website and Services<br />
+**Justification:** Consent (the feedback is always optional)
 
-:::note Purpose
-Providing insight on how our Website is being used
-Justification: Legitimate interest (necessary to improve and optimise our Website)
-:::
+**Purpose:** Providing insight on how our Website is being used<br />
+**Justification:** Legitimate interest (necessary to improve and optimise our Website)
 
-:::note Purpose 
-Administering and protecting our Website and systems
-Justification: Legitimate interests (necessary to provide our Services, monitor and improve Website security and prevent fraud)
-:::
+**Purpose:** Administering and protecting our Website and systems<br />
+**Justification:** Legitimate interests (necessary to provide our Services, monitor and improve Website security and prevent fraud)
 
-:::note Purpose
-Handling requests for technical support and other queries
-Justification: Legitimate interests (necessary to provide our Services to you and ensure the proper functioning of our Website)
-:::
+**Purpose:** Handling requests for technical support and other queries<br />
+**Justification:** Legitimate interests (necessary to provide our Services to you and ensure the proper functioning of our Website)
 
-:::note Purpose 
-Defending against legal claims
-Justification: Legitimate interests (to protect our business and defend ourselves against legal claims)
-:::
+**Purpose:** Defending against legal claims<br />
+**Justification:** Legitimate interests (to protect our business and defend ourselves against legal claims)
 
-:::note Purpose Notifying you about changes to our privacy notice
-Justification: Legal obligation (necessary to comply with our obligations under data protection law)
-:::
+**Purpose:** Notifying you about changes to our privacy notice<br />
+**Justification:** Legal obligation (necessary to comply with our obligations under data protection law)
 
 We may anonymise the personal data we collect (so it can no longer identify you) and then combine it with other anonymous information so it becomes aggregated data. Aggregated data helps us identify trends (e.g. what percentage of users responded to a specific survey). Data protection law does not govern the use of aggregated data and the various rights described below do not apply to it.
 
