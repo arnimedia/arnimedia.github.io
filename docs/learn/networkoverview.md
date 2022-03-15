@@ -7,8 +7,8 @@ sidebar_position: 1
 The Minima network consists of four distinct layers. Each layer contributes to Minima being a truly decentralized, peer-to-peer network for value and information exchange.
 
 ## Minima - Layer 1
-Value transfer
-On-chain
+**Value transfer<br />
+On-chain**
 
 Minima is a censorship resistant value transfer layer. All transactions are processed by all nodes on the network. It is flood-fill. It uses a P2P system as its backbone for communication between nodes.
 
@@ -18,8 +18,8 @@ The Minima blockchain is where all on-chain transactions are processed. Every no
 Users initiate their transacting relationships on Layer 1, prior to moving off-chain to use Layer 2 for faster and cheaper transactions. As the trust layer of the protocol, Layer 1 is also used for settling any disputes between users on Layer 2.
 
 ## Maxima
-Information transfer
-Off-chain
+**Information transfer<br />
+Off-chain**
 
 Maxima is the censorship resistant information transport layer running over the Minima network. Communication is point-to-point. Messages can be sent, off-chain, to chosen connected peers.
 
@@ -29,8 +29,8 @@ Maxima is an information transport layer, enabling encrypted, peer-to-peer excha
 Maxima can be used to build censorship resistant messaging applications over the Minima network and will be used for sending messages for Layer 2 communication.
 
 ## Layer 2 Architecture
-Value transfer 
-Off-chain
+**Value transfer<br /> 
+Off-chain**
 
 Layer 2 is fast, cheap and scalable. It enables instant peer-to-peer payments by creating bi-directional payment channels between participants, using technology similar to Bitcoin’s Lightning Network.
 
@@ -44,7 +44,7 @@ Using multi-signature smart contracts and payment channels, users can keep a ‘
 This unlocks the possibility of essentially unlimited transactions per second (TPS).
 
 ## MiniDapps
-Web3 Applications
+**Web3 Applications**
 
 MiniDapps are truly decentralised applications built using the functionality enabled by all components of the Minima network:
 1. Value transfer on Minima
