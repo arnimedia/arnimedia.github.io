@@ -50,7 +50,7 @@ Minima @ 14/03/2022 17:32:32 [11.1 MB] : RPC Server started on port : 9002
 ```
 ----
 
-How to set up Incentive Program to receive rewards
+## How to set up Incentive Program to receive rewards
 1. Go to https://incentive.minima.global/ - 
 
 Previous users: If you had an account prior to 6th December 2021, you will need to reset your password using the Forgot Password button (this is because encrypted passwords could not be migrated to the new system.)
