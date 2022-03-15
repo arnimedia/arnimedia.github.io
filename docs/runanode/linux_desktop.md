@@ -15,12 +15,15 @@ If you have not run Minima before, please ensure you have the latest version of 
 1. If you have a previous version of Minima running, replace your existing minima.jar file with the latest version.
 2. Download and save the latest Minima JAR using the button below (https://github.com/minima-global/Minima/raw/master/jar/minima.jar)
 3. Open the Command Prompt as Admin. When it opens, type the following:
-
+``` 
 sudo java -Xmx1G -jar (including a space after -jar) 
+``` 
 - then drag and drop the minima.jar file into the command window, 
 - then add a space and type -rpcenable 
 The output should look like the below:
+``` 
 sudo java -Xmx1G -jar /home/user/minima.jar -rpcenable
+``` 
 
 :::note Note
 When starting a new node or to delete your existing node data -clean can be added on to the end. Do not use -clean if you are simply restarting your node.
