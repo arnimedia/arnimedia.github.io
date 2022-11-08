@@ -4,11 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Vision',
-    link: 'docs/about/vision',
+    title: 'About',
+    link: 'docs/about/welcome',
     description: (
       <>
-        Learn about the orginal vision of Minima and why it exists.
+        Learn about the purpose and values of Minima and what our vision is
       </>
     ),
   },
@@ -17,43 +17,44 @@ const FeatureList = [
     link: 'docs/learn/networkoverview',
     description: (
       <>
-        An in-depth introduction to the Minima protocol and it’s architecture.
+        A deep dive into the Minima protocol and its architecture
       </>
     ),
   },
   {
-    title: 'Run a node',
+    title: 'Run a Node',
     link: 'docs/runanode/get_started_in_3_steps',
     description: (
       <>
-        Learn how to install and run a validating and constructing Minima node on your device.
+        Install and run a validating and constructing Minima node on your device
       </>
+    ),
+  },
+  {
+    title: 'Build',
+    link: 'docs/buildonminima/startaprivatenode',
+    description: (
+      <>
+        Develop decentralized applications and create smart contracts on Minima
+      </>
+              // Old tokenomics copy - Find out how a fixed supply of 1 billion Minima coins have been distributed
     ),
   },
   {
     title: 'Earn Rewards',
-    link: 'docs/minimaincentiveprogram',
+    link: 'docs/earnrewards/minimaincentiveprogram',
     description: (
       <>
-        Learn about the Minima Incentive Program
+        Join the Minima Incentive Program
       </>
     ),
   },
   {
     title: 'Ambassador',
-    link: 'docs/ambassador',
+    link: 'docs/earnrewards/ambassador',
     description: (
       <>
-        Learn how to become a Minima ambassador and what Rewards you could earn
-      </>
-    ),
-  },
-  {
-    title: 'Tokenomics',
-    link: 'docs/tokendistribution',
-    description: (
-      <>
-        Find out how a fixed supply of 1 Billion coins have been distributed.
+        Become a Minima ambassador and earn additional Rewards
       </>
     ),
   },
