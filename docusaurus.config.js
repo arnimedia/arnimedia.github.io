@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "arnimedia", // Usually your GitHub org/user name.
-  projectName: "minidocs", // Usually your repo name.
+  projectName: "arnimedia.github.io", // Usually your repo name.
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
